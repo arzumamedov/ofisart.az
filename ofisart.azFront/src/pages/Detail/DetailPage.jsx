@@ -21,6 +21,15 @@ function DetailPage() {
     }, [id])
 
 
+    useEffect(() => {
+        fetch("http://localhost:3030/newproduct" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+
     return (
         <>
 
