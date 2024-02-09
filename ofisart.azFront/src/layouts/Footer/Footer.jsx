@@ -1,6 +1,9 @@
-import React from 'react'
-import './Footer.scss'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import './Footer.scss';
 function Footer() {
+  const { t, i18n } = useTranslation();
+
 
   const handleWhatsAppClick = (e) => {
     e.preventDefault();
@@ -18,15 +21,15 @@ function Footer() {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci cumque ipsa libero voluptate sed aperiam, illo laboriosam soluta odit accusantium.</p>
           </div>
           <div className='footerTopProduct'>
-            <h4>Məhsullar</h4>
-            <p>Masalar</p>
-            <p>Divanlar/Kreslolar</p>
-            <p>Dolablar</p>
-            <p>Digər</p>
+            <h4>{t('products')}</h4>
+            <p>{t('tables')}</p>
+            <p>{t('sofas/armchairs')}</p>
+            <p>{t('closets')}</p>
+            <p>{t('other')}</p>
             <p></p>
           </div>
           <div className='footerTopContact'>
-            <h4>Əlaqə</h4>
+            <h4>{t('connection')}</h4>
             <div className='phone'>
               <i class="fa-solid fa-phone"></i>
               <p>+994-51-573-73-13</p>
@@ -47,7 +50,7 @@ function Footer() {
             </div>
           </div>
           <div className='footerTopProject'>
-            <h4>Layihələr</h4>
+            <h4>{t('projectsf')}</h4>
             <div className='images'>
               <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/08/ig4.jpg" alt="" />
               <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/08/ig1.jpg" alt="" />

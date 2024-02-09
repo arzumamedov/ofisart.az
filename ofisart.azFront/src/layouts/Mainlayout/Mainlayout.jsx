@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 function Mainlayout() {
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             <Outlet/>
             <Footer />
         </>

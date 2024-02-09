@@ -19,6 +19,7 @@ function DetailPage() {
 
             <div className='detailCard'>
                     <div className='name'>{detail.name}</div>
+                    
                     <img src={detail.image} alt="" />
             </div>
         </>

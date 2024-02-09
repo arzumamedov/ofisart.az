@@ -1,15 +1,16 @@
-import React from 'react'
-import HeaderSection from '../../components/HeaderSection/HeaderSection'
-import ProductSection from '../../components/ProductSection/ProductSection'
-import Gallery from '../../components/Gallery/Gallery'
+import React from 'react';
+import Gallery from '../../components/Gallery/Gallery';
+import HeaderSection from '../../components/HeaderSection/HeaderSection';
+import ProductSection from '../../components/ProductSection/ProductSection';
 
 function Homepage() {
   return (
     <>
-        <HeaderSection/>
-        <ProductSection/>
-        <Gallery/>
-        {/* <VideoPlayer/> */}
+      
+      <HeaderSection />/
+      <ProductSection />
+      <Gallery />
+      {/* <VideoPlayer/> */}
     </>
   )
 }
