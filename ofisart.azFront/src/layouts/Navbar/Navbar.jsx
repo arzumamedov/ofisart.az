@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.scss'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
     <header className="header" id="header">
       <nav className="navbar container">
         <section className="navbar__left">
-          <h1>OfisArt</h1>
+          <NavLink to={'/'}><h1>OfisArt</h1></NavLink>
         </section>
         <section className="navbar__center">
           <div className="menu">
@@ -24,32 +24,30 @@ const Navbar = () => {
               <span className="menu__title"></span>
             </div> */}
             <u className="menu__inner">
-              <li className="menu__item"><Link to={'/'}><a href="#" className="menu__link">Home</a></Link></li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
-                  Products
+                  Məhsullar
                   <i class="fa-solid fa-angle-up"></i>
                   {/* <i className="bx bx-chevron-right"></i> */}
                 </a>
                 <div className="submenu megamenu__text">
                   <div className="submenu__inner">
-                    <h4 className="submenu__title">Women</h4>
+                    <h4 className="submenu__title">{t('table')}</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">Shirts & Blouses</a></li>
-                      <li><a href="#">Pants</a></li>
-                      <li><a href="#">Blazers & Vests</a></li>
-                      <li><a href="#">Cardigans & Sweaters</a></li>
+                      <li><a href="#">{t('manager')}</a></li>
+                      <li><a href="#">İşçi masaları</a></li>
+                      <li><a href="#">İclas masaları</a></li>
+                      <li><a href="#">Home ofis masaları</a></li>
                     </ul>
                   </div>
 
 
                   <div className="submenu__inner">
-                    <h4 className="submenu__title">Women</h4>
+                    <h4 className="submenu__title">Divan/Kreslo</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">Shirts & Blouses</a></li>
-                      <li><a href="#">Pants</a></li>
-                      <li><a href="#">Blazers & Vests</a></li>
-                      <li><a href="#">Cardigans & Sweaters</a></li>
+                      <li><a href="#">Menecer kresloları</a></li>
+                      <li><a href="#">İşçi kresloları</a></li>
+                      <li><a href="#">Divanlar</a></li>
                     </ul>
                   </div>
 
@@ -57,33 +55,35 @@ const Navbar = () => {
 
 
                   <div className="submenu__inner">
-                    <h4 className="submenu__title">Women</h4>
+                    <h4 className="submenu__title">Dolab</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">Shirts & Blouses</a></li>
-                      <li><a href="#">Pants</a></li>
-                      <li><a href="#">Blazers & Vests</a></li>
-                      <li><a href="#">Cardigans & Sweaters</a></li>
+                      <li><a href="#">Rəfli dolablar</a></li>
+                      <li><a href="#">Sənəd dolabları</a></li>
+                      <li><a href="#">Tumbalar</a></li>
+                      <li><a href="#">Kamodlar</a></li>
+                      <li><a href="#">Müştəri qəbul masası</a></li>
+
                     </ul>
                   </div>
 
 
 
                   <div className="submenu__inner">
-                    <h4 className="submenu__title">Women</h4>
+                    <h4 className="submenu__title">Digər</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">Shirts & Blouses</a></li>
-                      <li><a href="#">Pants</a></li>
-                      <li><a href="#">Blazers & Vests</a></li>
-                      <li><a href="#">Cardigans & Sweaters</a></li>
+                      <li><a href="#">Paltar asqılıqları</a></li>
+                      <li><a href="#">Jurnal masaları</a></li>
+                      <li><a href="#">Aksesuarlar</a></li>
                     </ul>
                   </div>
 
                   {/* Diğer alt menüler */}
                 </div>
               </li>
+              <li className="menu__item"><Link to={'/'}><a href="#" className="menu__link">Layihələr</a></Link></li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
-                  More
+                  Haqqımızda
                 </a>
                 {/* <div className="submenu megamenu__image">
                   <div className="submenu__inner">
@@ -96,7 +96,7 @@ const Navbar = () => {
               </li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
-                  Account
+                  Əlaqə
                   <i className="bx bx-chevron-right"></i>
                 </a>
                 <div className="submenu megamenu__normal">
@@ -108,7 +108,7 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-              <li className="menu__item"><a href="#" className="menu__link">Support</a></li>
+              {/* <li className="menu__item"><a href="#" className="menu__link">Support</a></li> */}
             </u>
           </div>
         </section>

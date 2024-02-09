@@ -135,8 +135,6 @@ img {
     box-shadow: var(--shadow-large);
     background-color: initial;
     background-color: rgba($color: #1a1717, $alpha: 0.8);
-
-
 }
 
 .navbar {
@@ -179,8 +177,6 @@ img {
         // display: flex;
         // background-color: yellow;
     }
-  
-
 
     .navbar__right {
         width: 200px;
@@ -189,13 +185,13 @@ img {
         align-items: center;
         column-gap: 1.5rem;
         // background-color: blue;
-button{
-    width: 40px;
-    background-color: #b97a56;
-    height: 20px;
-    border-radius: 20px;
-    color: white;
-}
+        button {
+            width: 40px;
+            background-color: #b97a56;
+            height: 20px;
+            border-radius: 20px;
+            color: white;
+        }
 
         // @media (max-width: $breakpoint - 1) {
         //     flex: 0 0 auto;
@@ -230,7 +226,6 @@ button{
         // background-color: green;
         display: flex;
         justify-content: space-between;
-
 
         .menu__item {
             // position: static;
@@ -425,7 +420,7 @@ button{
     height: auto;
     padding: 20px 15px;
     border-radius: 0.25rem;
-    border-top: 2px solid var(--color);
+    // border-top: 2px solid var(--color);
     background-color: #fff;
     box-shadow: var(--shadow-medium);
     opacity: 0;
@@ -492,32 +487,9 @@ button{
     }
 
     .submenu__inner {
-        a {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-
-            // @media (max-width: $breakpoint - 1) {
-            //     flex-flow: row;
-            //     align-items: center;
-            //     padding-bottom: 20px;
-            // }
-
-            img {
-                display: block;
-                width: 100%;
-                height: 150px;
-                margin-bottom: 15px;
-                object-fit: cover;
-                border-radius: 10px;
-
-                // @media (max-width: $breakpoint - 1) {
-                //     width: 30%;
-                //     height: 80px;
-                //     margin-bottom: 0;
-                //     margin-right: 15px;
-                // }
-            }
+        h4 {
+            color: #b97a56;
+            font-size: 19px;
         }
     }
 
@@ -549,7 +521,7 @@ button{
         // @media (max-width: $breakpoint - 1) {
         //     margin-bottom: 20px;
         // }
-        background-color: green;
+        // background-color: green;
 
         li {
             display: block;
@@ -561,11 +533,11 @@ button{
                 padding: 10px 0;
                 line-height: 1.4;
                 text-transform: capitalize;
-                color: #000;
+                color: #d8a088;
                 transition: all 0.25s ease-in-out;
 
                 &:hover {
-                    color: var(--color);
+                    color: black;
                 }
 
                 // @media (max-width: $breakpoint - 1) {

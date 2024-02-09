@@ -6,7 +6,14 @@ function DetailPage() {
     const { id } = useParams()
 
     useEffect(() => {
-        fetch("http://localhost:3030/" + id)
+        fetch("http://localhost:3030/bestseller" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+    useEffect(() => {
+        fetch("http://localhost:3030/project" + id)
             .then((res) => res.json())
             .then((api) => {
                 setDetail(api);

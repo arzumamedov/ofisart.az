@@ -20,15 +20,18 @@ function ProductSection() {
                         <h2>{t('title')}</h2>
                     </div>
                 </Link>
-                <div className="productCard">
-                    <div className='image'>
-                        <div className='shadow'>
-                            <i class="fa-solid fa-eye"></i>
+                <Link to={'/project'}>
+                    <div className="productCard">
+                        <div className='image'>
+                            <div className='shadow'>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m2-project-2.jpg" alt="" />
                         </div>
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m2-project-2.jpg" alt="" />
+                        <h2>{t('projects')}</h2>
                     </div>
-                    <h2>{t('projects')}</h2>
-                </div>
+                </Link>
+                <Link to={'/newproduct'}>
                 <div className="productCard">
                     <div className='image'>
                         <div className='shadow'>
@@ -38,6 +41,7 @@ function ProductSection() {
                     </div>
                     <h2>{t('newproduct')}</h2>
                 </div>
+                </Link>
             </div>
         </>
     )
