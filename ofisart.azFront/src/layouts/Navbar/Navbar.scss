@@ -241,19 +241,8 @@ img {
             //     color: red;
             // }
 
-            &:last-child {
-                padding-right: 0;
-            }
 
-            &:hover {
-                > .menu__link {
-                    color: var(--color);
-                }
 
-                .darkmode & > .menu__link {
-                    color: var(--color);
-                }
-            }
 
             // @media (max-width: $breakpoint - 1) {
             //     display: block;
@@ -468,7 +457,7 @@ img {
             width: 100%;
             height: auto;
             margin: 0 auto;
-            background-color: blue;
+            // background-color: blue;
         }
     }
 
@@ -523,12 +512,12 @@ img {
         // }
         // background-color: green;
 
-        li {
+        a {
             display: block;
             line-height: 1;
             margin: 0 auto;
 
-            a {
+            li {
                 display: inline-block;
                 padding: 10px 0;
                 line-height: 1.4;
@@ -547,9 +536,9 @@ img {
                 .darkmode & {
                     color: #fff;
 
-                    &:hover {
-                        color: var(--color);
-                    }
+                    // &:hover {
+                    //     color: var(--color);
+                    // }
                 }
             }
         }

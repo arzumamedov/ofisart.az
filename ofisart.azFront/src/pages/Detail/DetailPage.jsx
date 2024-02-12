@@ -30,6 +30,85 @@ function DetailPage() {
     }, [id])
 
 
+
+    useEffect(() => {
+        fetch("http://localhost:3030/menagerdesk" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+    useEffect(() => {
+        fetch("http://localhost:3030/stafftable" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+
+
+
+    useEffect(() => {
+        fetch("http://localhost:3030/meetingtable" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+
+
+
+
+    useEffect(() => {
+        fetch("http://localhost:3030/homedesk" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+
+
+
+    useEffect(() => {
+        fetch("http://localhost:3030/executivechair" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+
+
+    useEffect(() => {
+        fetch("http://localhost:3030/staffchair" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+
+    
+
+
+
+    useEffect(() => {
+        fetch("http://localhost:3030/sofa" + id)
+            .then((res) => res.json())
+            .then((api) => {
+                setDetail(api);
+            })
+    }, [id])
+
+
+
+
+
+
     return (
         <>
 

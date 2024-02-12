@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function ProjectPage() {
 
-    const [detail, setDetail] = useState([])
+    const [detail, setDetail] = useState(null)
 
     useEffect(() => {
         fetch("http://localhost:3030/project")
@@ -15,18 +15,20 @@ function ProjectPage() {
 
     return (
         <>
-            <div className='bestSeller'>
-                {detail.map((x) => (
-
-                    <div className='card'>
-                        <div className='name'>{x.name}</div>
-                        <Link to={'/detail/' + x._id}>
-
-                            <img src={x.image} alt="" />
-                        </Link>
+            <div className='project'>
+                {detail === null ?
+                    <div className="spinner-container">
+                        <i className="fa-solid fa-spinner fa-spin"></i>
                     </div>
-
-                ))}
+                    : detail.map((x) => (
+                        <div className='card'>
+                            <div className='name'>{x.name}</div>
+                            <Link to={'/detail/' + x._id}>
+                                <img src={x.image} alt="" />
+                            </Link>
+                        </div>
+                    ))
+                }
             </div>
 
         </>

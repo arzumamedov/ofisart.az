@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import './BestSeller.scss'
+import './HomeDesk.scss'
 import { Link } from 'react-router-dom'
 
-function BestSeller() {
+function HomeDesk() {
 
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/bestseller")
+        fetch("http://localhost:3030/homedesk")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -35,4 +35,4 @@ function BestSeller() {
     )
 }
 
-export default BestSeller
+export default HomeDesk

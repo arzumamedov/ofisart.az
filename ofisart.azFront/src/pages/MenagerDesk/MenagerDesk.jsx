@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import './BestSeller.scss'
+import './MenagerDesk.scss'
 import { Link } from 'react-router-dom'
 
-function BestSeller() {
+function MenagerDesk() {
 
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/bestseller")
+        fetch("http://localhost:3030/menagerdesk")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -15,7 +15,7 @@ function BestSeller() {
 
     return (
         <>
-    <div className='bestSeller'>
+    <div className='menagerDesk'>
       {detail === null ? 
         <div className="spinner-container">
           <i className="fa-solid fa-spinner fa-spin"></i>
@@ -35,4 +35,4 @@ function BestSeller() {
     )
 }
 
-export default BestSeller
+export default MenagerDesk

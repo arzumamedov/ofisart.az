@@ -26,7 +26,7 @@ const Navbar = () => {
             <u className="menu__inner">
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
-                  Məhsullar
+                  {t('products')}
                   <i class="fa-solid fa-angle-up"></i>
                   {/* <i className="bx bx-chevron-right"></i> */}
                 </a>
@@ -34,10 +34,10 @@ const Navbar = () => {
                   <div className="submenu__inner">
                     <h4 className="submenu__title">{t('table')}</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">{t('manager')}</a></li>
-                      <li><a href="#">İşçi masaları</a></li>
-                      <li><a href="#">İclas masaları</a></li>
-                      <li><a href="#">Home ofis masaları</a></li>
+                      <Link to={'/menagerdesk'}><li>{t('manager')}</li></Link>
+                      <Link to={'/stafftable'}><li>İşçi masaları</li></Link>
+                      <Link to={'/meetingtable'}><li>İclas masaları</li></Link>
+                      <Link to={'/homedesk'}><li>Home ofis masaları</li></Link>
                     </ul>
                   </div>
 
@@ -45,9 +45,9 @@ const Navbar = () => {
                   <div className="submenu__inner">
                     <h4 className="submenu__title">Divan/Kreslo</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">Menecer kresloları</a></li>
-                      <li><a href="#">İşçi kresloları</a></li>
-                      <li><a href="#">Divanlar</a></li>
+                      <Link to={'/executivechair'}><li>Menecer kresloları</li></Link>
+                      <Link to={'/staffchair'}><li>İşçi kresloları</li></Link>
+                      <Link to={'/sofa'}><li>Divanlar</li></Link>
                     </ul>
                   </div>
 
@@ -57,11 +57,11 @@ const Navbar = () => {
                   <div className="submenu__inner">
                     <h4 className="submenu__title">Dolab</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">Rəfli dolablar</a></li>
-                      <li><a href="#">Sənəd dolabları</a></li>
-                      <li><a href="#">Tumbalar</a></li>
-                      <li><a href="#">Kamodlar</a></li>
-                      <li><a href="#">Müştəri qəbul masası</a></li>
+                      <Link><li>Rəfli dolablar</li></Link>
+                      <Link><li>Sənəd dolabları</li></Link>
+                      <Link><li>Tumbalar</li></Link>
+                      <Link><li>Kamodlar</li></Link>
+                      <Link><li>Müştəri qəbul masası</li></Link>
 
                     </ul>
                   </div>
@@ -71,19 +71,19 @@ const Navbar = () => {
                   <div className="submenu__inner">
                     <h4 className="submenu__title">Digər</h4>
                     <ul className="submenu__list">
-                      <li><a href="#">Paltar asqılıqları</a></li>
-                      <li><a href="#">Jurnal masaları</a></li>
-                      <li><a href="#">Aksesuarlar</a></li>
+                      <Link><li>Paltar asqılıqları</li></Link>
+                      <Link><li>Jurnal masaları</li></Link>
+                      <Link><li>Aksesuarlar</li></Link>
                     </ul>
                   </div>
 
                   {/* Diğer alt menüler */}
                 </div>
               </li>
-              <li className="menu__item"><Link to={'/'}><a href="#" className="menu__link">Layihələr</a></Link></li>
+              <li className="menu__item"><Link to={'/'}><a href="#" className="menu__link">{t('projectsf')}</a></Link></li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
-                  Haqqımızda
+                  {t('about')}
                 </a>
                 {/* <div className="submenu megamenu__image">
                   <div className="submenu__inner">
@@ -96,15 +96,15 @@ const Navbar = () => {
               </li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
-                  Əlaqə
+                  {t('contact')}
                   <i className="bx bx-chevron-right"></i>
                 </a>
                 <div className="submenu megamenu__normal">
                   <ul className="submenu__list">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Track Order</a></li>
-                    <li><a href="#">Help</a></li>
+                    <Link><li>Login</li></Link>
+                    <Link><li>Register</li></Link>
+                    <Link><li>Track Order</li></Link>
+                    <Link><li>Help</li></Link>
                   </ul>
                 </div>
               </li>

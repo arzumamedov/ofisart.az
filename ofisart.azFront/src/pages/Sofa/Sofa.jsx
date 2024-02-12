@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import './Sofa.scss'
 import { Link } from 'react-router-dom'
-import './NewProduct.scss'
 
-function NewProduct() {
+function Sofa() {
 
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/newproduct")
+        fetch("http://localhost:3030/sofa")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -15,7 +15,7 @@ function NewProduct() {
 
     return (
         <>
-            <div className='newProduct'>
+            <div className='sofa'>
                 {detail === null ?
                     <div className="spinner-container">
                         <i className="fa-solid fa-spinner fa-spin"></i>
@@ -35,4 +35,4 @@ function NewProduct() {
     )
 }
 
-export default NewProduct
+export default Sofa
