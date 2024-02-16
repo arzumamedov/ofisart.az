@@ -7,7 +7,7 @@ function MenagerDesk() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/menagerdesk")
+        fetch("http://localhost:3030/api/product/65ce8a7588d10110e61590a5")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -24,7 +24,7 @@ function MenagerDesk() {
             <div className='card'>
                 <div className='name'>{x.name}</div>
                 <Link to={'/detail/' + x._id}>
-                    <img src={x.image} alt="" />
+                    <img src={x.image[0]} alt="" />
                 </Link>
             </div>
           ))

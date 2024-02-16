@@ -1,18 +1,23 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Mainlayout from './layouts/Mainlayout/Mainlayout'
 import BestSeller from './pages/BestSeller/BestSeller'
-import Homepage from './pages/Home/Homepage'
 import DetailPage from './pages/Detail/DetailPage'
-import ProjectPage from './pages/ProjectPage/ProjectPage'
-import NewProduct from './pages/NewProduct/NewProduct'
-import MenagerDesk from './pages/MenagerDesk/MenagerDesk'
-import StaffTable from './pages/StaffTable/StaffTable'
-import MeetingTable from './pages/MeetingTable/MeetingTable'
-import HomeDesk from './pages/HomeDesk/HomeDesk'
-import Executivechair from './pages/ExecutiveChair/ExecutiveChair'
+import Dresser from './pages/Dresser/Dresser'
 import ExecutiveChair from './pages/ExecutiveChair/ExecutiveChair'
-import StaffChair from './pages/StaffChair/StaffChair'
+import FilingCabinet from './pages/FilingCabinet/FilingCabinet'
+import Hanger from './pages/Hanger/Hanger'
+import Homepage from './pages/Home/Homepage'
+import HomeOfficeDesk from './pages/HomeOfficeDesk/HomeOfficeDesk'
+import MagazineTable from './pages/MagazineTable/MagazineTable'
+import MeetingTable from './pages/MeetingTable/MeetingTable'
+import MenagerDesk from './pages/MenagerDesk/MenagerDesk'
+import NewProduct from './pages/NewProduct/NewProduct'
+import ProjectPage from './pages/ProjectPage/ProjectPage'
 import Sofa from './pages/Sofa/Sofa'
+import StaffChair from './pages/StaffChair/StaffChair'
+import StaffTable from './pages/StaffTable/StaffTable'
+import Tumba from './pages/Tumba/Tumba'
+import Wardrobe from './pages/Wardrobe/Wardrobe'
 function App() {
 
   return (
@@ -28,10 +33,21 @@ function App() {
             <Route path='/menagerdesk' element={<MenagerDesk />} />
             <Route path='/stafftable' element={<StaffTable />} />
             <Route path='/meetingtable' element={<MeetingTable />} />
-            <Route path='/homedesk' element={<HomeDesk />} />
+            <Route path='/homeofficedesk' element={<HomeOfficeDesk />} />
             <Route path='/executivechair' element={<ExecutiveChair />} />
             <Route path='/staffchair' element={<StaffChair />} />
             <Route path='/sofa' element={<Sofa />} />
+            <Route path='/wardrobe' element={<Wardrobe />} />
+            <Route path='/filingcabinet' element={<FilingCabinet />} />
+            <Route path='/dresser' element={<Dresser />} />
+            <Route path='/tumba' element={<Tumba />} />
+            <Route path='/hanger' element={<Hanger />} />
+            <Route path='/magazinetable' element={<MagazineTable />} />
+
+
+
+
+            {/* <Route path='/login' element={<YourComponent />} /> */}
 
           </Route>
         </Routes>

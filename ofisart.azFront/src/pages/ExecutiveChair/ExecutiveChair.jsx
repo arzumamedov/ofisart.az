@@ -7,7 +7,7 @@ function ExecutiveChair() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/executivechair")
+        fetch("http://localhost:3030/api/product/65cf40c32072888a8aa42e54")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -24,7 +24,7 @@ function ExecutiveChair() {
             <div className='card'>
                 <div className='name'>{x.name}</div>
                 <Link to={'/detail/' + x._id}>
-                    <img src={x.image} alt="" />
+                    <img src={x.image[0]} alt="" />
                 </Link>
             </div>
           ))

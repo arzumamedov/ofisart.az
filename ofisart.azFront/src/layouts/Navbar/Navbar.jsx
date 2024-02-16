@@ -37,7 +37,7 @@ const Navbar = () => {
                       <Link to={'/menagerdesk'}><li>{t('manager')}</li></Link>
                       <Link to={'/stafftable'}><li>İşçi masaları</li></Link>
                       <Link to={'/meetingtable'}><li>İclas masaları</li></Link>
-                      <Link to={'/homedesk'}><li>Home ofis masaları</li></Link>
+                      <Link to={'/homeofficedesk'}><li>Home ofis masaları</li></Link>
                     </ul>
                   </div>
 
@@ -57,10 +57,10 @@ const Navbar = () => {
                   <div className="submenu__inner">
                     <h4 className="submenu__title">Dolab</h4>
                     <ul className="submenu__list">
-                      <Link><li>Rəfli dolablar</li></Link>
-                      <Link><li>Sənəd dolabları</li></Link>
-                      <Link><li>Tumbalar</li></Link>
-                      <Link><li>Kamodlar</li></Link>
+                      <Link to={'/wardrobe'}><li>Rəfli dolablar</li></Link>
+                      <Link to={'/filingcabinet'}><li>Sənəd dolabları</li></Link>
+                      <Link to={'/tumba'}><li>Tumbalar</li></Link>
+                      <Link to={'/dresser'}><li>Kamodlar</li></Link>
                       <Link><li>Müştəri qəbul masası</li></Link>
 
                     </ul>
@@ -71,8 +71,8 @@ const Navbar = () => {
                   <div className="submenu__inner">
                     <h4 className="submenu__title">Digər</h4>
                     <ul className="submenu__list">
-                      <Link><li>Paltar asqılıqları</li></Link>
-                      <Link><li>Jurnal masaları</li></Link>
+                      <Link to={'/hanger'}><li>Paltar asqılıqları</li></Link>
+                      <Link to={'/magazinetable'}><li>Jurnal masaları</li></Link>
                       <Link><li>Aksesuarlar</li></Link>
                     </ul>
                   </div>
@@ -101,7 +101,7 @@ const Navbar = () => {
                 </a>
                 <div className="submenu megamenu__normal">
                   <ul className="submenu__list">
-                    <Link><li>Login</li></Link>
+                    <Link to={'/login'}><li>Login</li></Link>
                     <Link><li>Register</li></Link>
                     <Link><li>Track Order</li></Link>
                     <Link><li>Help</li></Link>

@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { A11y, Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { A11y, Autoplay, Keyboard, Navigation, Pagination } from 'swiper/modules';
 
 import { useTranslation } from 'react-i18next';
 import 'swiper/css';
@@ -9,20 +9,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import './HeaderSection.scss';
 
 export default () => {
-  const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return (
         <Swiper
+        className='swiper'
             // install Swiper modules
-            modules={[Navigation, Pagination, Autoplay, A11y]}
+            modules={[Navigation, Keyboard, Pagination, Autoplay, A11y]}
             spaceBetween={0}
             slidesPerView={4}
             navigation={{
                 prevEl: false,
                 nextEl: false,
             }}
+            keyboard={{
+                enabled: true
+            }}
             loop={true}
-            // autoplay={{ delay: 2000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
         >

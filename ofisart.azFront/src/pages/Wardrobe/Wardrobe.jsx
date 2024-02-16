@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import './HomeDesk.scss'
+import './Wardrobe.scss'
 import { Link } from 'react-router-dom'
 
-function HomeDesk() {
+function Wardrobe() {
 
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/homedesk")
+        fetch("http://localhost:3030/api/product/65cf41412072888a8aa42e5c")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -15,7 +15,7 @@ function HomeDesk() {
 
     return (
         <>
-    <div className='bestSeller'>
+    <div className='wardrobe'>
       {detail === null ? 
         <div className="spinner-container">
           <i className="fa-solid fa-spinner fa-spin"></i>
@@ -35,4 +35,4 @@ function HomeDesk() {
     )
 }
 
-export default HomeDesk
+export default Wardrobe

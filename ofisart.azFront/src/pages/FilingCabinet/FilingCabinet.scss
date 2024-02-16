@@ -1,4 +1,4 @@
-.staffTable {
+.filingCabinet {
     width: 100%;
     min-height: 100vh;
     // background-color: aqua;
@@ -12,25 +12,25 @@
         justify-content: center;
         // background-color: aqua;
         width: 100%;
-        min-height: 100vh; 
-        i{
+        min-height: 100vh;
+        i {
             font-size: 90px;
-            color: #B97A56;
+            color: #b97a56;
         }
-      }
-      
-      .fa-spinner {
+    }
+
+    .fa-spinner {
         animation: spin 1s linear infinite;
-      }
-      
-      @keyframes spin {
+    }
+
+    @keyframes spin {
         from {
-          transform: rotate(0deg);
+            transform: rotate(0deg);
         }
         to {
-          transform: rotate(360deg);
+            transform: rotate(360deg);
         }
-      }
+    }
     .card {
         width: 33%;
         // height: 350px;
@@ -50,7 +50,6 @@
         img {
             width: 100%;
             height: 95%;
-            object-fit: contain;
         }
     }
 }

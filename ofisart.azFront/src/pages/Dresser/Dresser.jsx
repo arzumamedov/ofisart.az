@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import './MeetingTable.scss'
+import './Dresser.scss'
 import { Link } from 'react-router-dom'
 
-function MeetingTable() {
+function Dresser() {
 
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65ce8a9d88d10110e61590a9")
+        fetch("http://localhost:3030/api/product/65cf41682072888a8aa42e62")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -15,7 +15,7 @@ function MeetingTable() {
 
     return (
         <>
-    <div className='meetingTable'>
+    <div className='dresser'>
       {detail === null ? 
         <div className="spinner-container">
           <i className="fa-solid fa-spinner fa-spin"></i>
@@ -24,7 +24,7 @@ function MeetingTable() {
             <div className='card'>
                 <div className='name'>{x.name}</div>
                 <Link to={'/detail/' + x._id}>
-                    <img src={x.image[0]} alt="" />
+                    <img src={x.image} alt="" />
                 </Link>
             </div>
           ))
@@ -35,4 +35,4 @@ function MeetingTable() {
     )
 }
 
-export default MeetingTable
+export default Dresser

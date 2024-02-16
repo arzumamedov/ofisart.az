@@ -7,7 +7,7 @@ function StaffChair() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/staffchair")
+        fetch("http://localhost:3030/api/product/65cf40e22072888a8aa42e57")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -24,7 +24,7 @@ function StaffChair() {
             <div className='card'>
                 <div className='name'>{x.name}</div>
                 <Link to={'/detail/' + x._id}>
-                    <img src={x.image} alt="" />
+                    <img src={x.image[0]} alt="" />
                 </Link>
             </div>
           ))

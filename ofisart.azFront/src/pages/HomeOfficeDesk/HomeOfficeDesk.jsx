@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import './MeetingTable.scss'
+import './HomeOfficeDesk.scss'
 import { Link } from 'react-router-dom'
 
-function MeetingTable() {
+function HomeOfficeDesk() {
 
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65ce8a9d88d10110e61590a9")
+        fetch("http://localhost:3030/api/product/65ce8ab188d10110e61590ab")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -15,7 +15,7 @@ function MeetingTable() {
 
     return (
         <>
-    <div className='meetingTable'>
+    <div className='homeOfficeDesk'>
       {detail === null ? 
         <div className="spinner-container">
           <i className="fa-solid fa-spinner fa-spin"></i>
@@ -35,4 +35,4 @@ function MeetingTable() {
     )
 }
 
-export default MeetingTable
+export default HomeOfficeDesk
