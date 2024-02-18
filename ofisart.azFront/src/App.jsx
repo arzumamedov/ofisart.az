@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Mainlayout from './layouts/Mainlayout/Mainlayout'
+import Accessory from './pages/Accessory/Accessory'
 import BestSeller from './pages/BestSeller/BestSeller'
 import DetailPage from './pages/Detail/DetailPage'
 import Dresser from './pages/Dresser/Dresser'
@@ -18,6 +19,7 @@ import StaffChair from './pages/StaffChair/StaffChair'
 import StaffTable from './pages/StaffTable/StaffTable'
 import Tumba from './pages/Tumba/Tumba'
 import Wardrobe from './pages/Wardrobe/Wardrobe'
+import Login from './pages/Login/Login'
 function App() {
 
   return (
@@ -43,6 +45,9 @@ function App() {
             <Route path='/tumba' element={<Tumba />} />
             <Route path='/hanger' element={<Hanger />} />
             <Route path='/magazinetable' element={<MagazineTable />} />
+            <Route path='/accessory' element={<Accessory />} />
+            <Route path='/login' element={<Login />} />
+
 
 
 

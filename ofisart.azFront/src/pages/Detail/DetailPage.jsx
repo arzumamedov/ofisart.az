@@ -117,9 +117,9 @@ function DetailPage() {
                 </div>
                 <div className='detailRight'>
                     <div className='name'>{detail.name}</div>
-                    <div className='country'>İstehsalçı ölkə:{detail.country}</div>
-                    <div className='delivery'>Çatdırılma:{detail.delivery}</div>
-                    <div>Model:{detail.name}</div>
+                    <div className='country'> <i class="fa-solid fa-square-check"></i> İstehsalçı ölkə: {detail.country}</div>
+                    <div className='delivery'> <i class="fa-solid fa-square-check"></i> Çatdırılma: {detail.delivery}</div>
+                    <div className='model'> <i class="fa-solid fa-square-check"></i> Model: {detail.name}</div>
                 </div>
                 {/* <h1>salam</h1> */}
 

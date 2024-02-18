@@ -33,12 +33,13 @@ export const getAllProducts = async (req, res) => {
 
 export const postProduct = async (req, res) => {
     try {
-        const { name, image, country, delivery, categoryId } = req.body;
-        console.log(name, image, country, delivery, categoryId);
+        const { name, image,description, country, delivery, categoryId } = req.body;
+        console.log(name, image, description, country, delivery, categoryId);
+        
         let category = await CategoryModel.find({ _id: categoryId })
         console.log("category", category[0].name);
         category = category[0].name
-        const newProduct = new ProductModel({ name, image, country, delivery, category, categoryId });
+        const newProduct = new ProductModel({ name, image,description, country, delivery, category, categoryId });
         await newProduct.save();
         res.send(newProduct);
     } catch (error) {

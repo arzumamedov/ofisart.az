@@ -147,8 +147,8 @@ img {
     height: 65px;
     // margin: 0 auto;
     // background-color: green;
-
-    .navbar__left {
+  
+    .navbar__left1 {
         width: 150px;
         display: flex;
         justify-content: center;
@@ -237,7 +237,6 @@ img {
             display: flex;
             align-items: center;
             justify-content: center;
-            
 
             // a {
             //     color: red;
@@ -251,6 +250,7 @@ img {
             @media (min-width: $breakpoint) {
                 &:hover {
                     > .menu__link {
+                        background-color: #c7232f;
                         i {
                             transform: rotate(-180deg);
                         }

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import './Hanger.scss'
+import './Accessory.scss'
 import { Link } from 'react-router-dom'
 
-function Hanger() {
+function Accessory() {
 
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65cf41aa2072888a8aa42e66")
+        fetch("http://localhost:3030/api/product/65cf418e2072888a8aa42e64")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
@@ -15,7 +15,7 @@ function Hanger() {
 
     return (
         <>
-            <div className='hanger'>
+            <div className='accessory'>
                 {detail === null ?
                     <div className="spinner-container">
                         <i className="fa-solid fa-spinner fa-spin"></i>
@@ -35,4 +35,4 @@ function Hanger() {
     )
 }
 
-export default Hanger
+export default Accessory

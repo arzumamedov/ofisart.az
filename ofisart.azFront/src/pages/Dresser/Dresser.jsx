@@ -24,7 +24,7 @@ function Dresser() {
             <div className='card'>
                 <div className='name'>{x.name}</div>
                 <Link to={'/detail/' + x._id}>
-                    <img src={x.image} alt="" />
+                    <img src={x.image[0]} alt="" />
                 </Link>
             </div>
           ))

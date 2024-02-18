@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <header className="header" id="header">
       <nav className="navbar container">
-        <section className="navbar__left">
-          <NavLink to={'/'}><h1>OfisArt</h1></NavLink>
+        <section className="navbar__left1">
+          <NavLink to={'/'}><h1 className='navbar__a'>OfisArt</h1></NavLink>
         </section>
         <section className="navbar__center">
           <div className="menu">
@@ -73,7 +73,7 @@ const Navbar = () => {
                     <ul className="submenu__list">
                       <Link to={'/hanger'}><li>Paltar asqılıqları</li></Link>
                       <Link to={'/magazinetable'}><li>Jurnal masaları</li></Link>
-                      <Link><li>Aksesuarlar</li></Link>
+                      <Link to={'/accessory'}><li>Aksesuarlar</li></Link>
                     </ul>
                   </div>
 

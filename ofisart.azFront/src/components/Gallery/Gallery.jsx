@@ -12,16 +12,16 @@ function Gallery() {
                         <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/08/Black-2-Drawer-Nightstand1.jpg" alt="" />
                     </div>
                     <div className='galleryImg'>
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Lemoine-Small-Bar-Cabinet.jpg" alt="" />
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/single-prod-1a.jpg" alt="" />
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m5-cat-2.jpg" alt="" />
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m5-cat-3.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Vaquero-Dining-Chair.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Axis-Bench-Sofa.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Twist-Ash-Rotating-Desk1.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Rectangular-Dining-Table1.jpg" alt="" />
                     </div>
                     <div className='galleryImg'>
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m4-prod3-4.jpeg" alt="" />
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m4-bn-1.jpg" alt="" />
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/08/m2-post-1.jpg" alt="" />
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m2-project-3.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Grey-Outdoor-Lounge-Chair.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Right-Arm-Storage-Chaise.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/6-Drawer-Dresser.jpg" alt="" />
+                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/Round-Dining-Table.jpg" alt="" />
                     </div>
                     {/* <div className='galleryText'>
                         <h1>Brief History of Barcelona Club</h1>

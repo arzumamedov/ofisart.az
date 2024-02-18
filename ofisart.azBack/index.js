@@ -4,6 +4,7 @@ import cors from 'cors';
 import multer from "multer";
 import {CategoryRouter} from './src/routes/categoryRoutes.js' 
 import { ProductRouter } from './src/routes/productRoutes.js';
+import { AdminRouter } from './src/routes/adminRoutes.js';
 const upload = multer({ dest: 'public/' })
 const app = express()
 const port = 3030
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.static('public'))
 app.use('/api/category', CategoryRouter )
 app.use('/api/product', ProductRouter )
+app.use('/api/admin', AdminRouter )
 // const productSchema = new mongoose.Schema({
 //     name: String,
 //     image: String,
