@@ -1,8 +1,10 @@
 import React, { useContext, useState } from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+    const navigate = useNavigate()
     const [user, setUser] = useState({
         username: "",
         password: ""
@@ -26,7 +28,10 @@ const Login = () => {
            
       
             const data = await response.json();
-            console.log(data);
+            if (response.status === 200) {
+                
+            }
+            navigate('/dashboard')
           } catch (error) {
             console.error("Error during login:", error);
           }

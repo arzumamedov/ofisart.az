@@ -147,7 +147,7 @@ img {
     height: 65px;
     // margin: 0 auto;
     // background-color: green;
-  
+
     .navbar__left1 {
         width: 150px;
         display: flex;
@@ -192,11 +192,6 @@ img {
             border-radius: 20px;
             color: white;
         }
-
-        // @media (max-width: $breakpoint - 1) {
-        //     flex: 0 0 auto;
-        //     align-items: center;
-        // }
     }
 }
 
@@ -217,13 +212,6 @@ img {
     // background-color: blue;
 
     .menu__inner {
-        // @media (max-width: $breakpoint - 1) {
-        //     height: 100%;
-        //     margin-top: -3rem;
-        //     overflow-y: auto;
-        //     overflow-x: hidden;
-        // }
-        // background-color: green;
         display: flex;
         justify-content: space-between;
 
@@ -237,26 +225,6 @@ img {
             display: flex;
             align-items: center;
             justify-content: center;
-
-            // a {
-            //     color: red;
-            // }
-
-            // @media (max-width: $breakpoint - 1) {
-            //     display: block;
-            //     padding: 0;
-            // }
-
-            @media (min-width: $breakpoint) {
-                &:hover {
-                    > .menu__link {
-                        background-color: #c7232f;
-                        i {
-                            transform: rotate(-180deg);
-                        }
-                    }
-                }
-            }
 
             &.menu__dropdown {
                 @media (min-width: $breakpoint) {

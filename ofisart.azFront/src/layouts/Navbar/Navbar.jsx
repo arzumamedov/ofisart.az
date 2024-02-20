@@ -73,7 +73,7 @@ const Navbar = () => {
                     <ul className="submenu__list">
                       <Link to={'/hanger'}><li>Paltar asqılıqları</li></Link>
                       <Link to={'/magazinetable'}><li>Jurnal masaları</li></Link>
-                      <Link to={'/accessory'}><li>Aksesuarlar</li></Link>
+                      {/* <Link to={'/accessory'}><li>Aksesuarlar</li></Link> */}
                     </ul>
                   </div>
 
