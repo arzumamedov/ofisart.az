@@ -13,28 +13,29 @@ const Login = () => {
         event.preventDefault();
         try {
             const response = await fetch('http://localhost:3030/api/admin/login', {
-              method: "POST",
-              mode: "cors",
-              cache: "no-cache",
-              credentials: "same-origin",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              redirect: "follow",
-              referrerPolicy: "no-referrer",
-              body: JSON.stringify(user),
+                method: "POST",
+                mode: "cors",
+                cache: "no-cache",
+                credentials: "same-origin",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                redirect: "follow",
+                referrerPolicy: "no-referrer",
+                body: JSON.stringify(user),
             });
-      
-           
-      
+
+
+
             const data = await response.json();
             if (response.status === 200) {
-                
+                const token = data.token;
+                navigate('/dashboard')
             }
-            navigate('/dashboard')
-          } catch (error) {
+            console.log(response);
+        } catch (error) {
             console.error("Error during login:", error);
-          }
+        }
     }
     return (
         <div className="login">

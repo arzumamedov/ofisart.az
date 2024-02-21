@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+}
+footer .wp {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+  background-image: url("https://www.zivella.com/s/2636/i/Whatsappikon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer .wp:hover {
+  cursor: pointer;
+}
+footer .footerTop {
+  width: 100%;
+  height: 400px;
+  background-color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .footerTop .footerTopArt {
+  width: 260px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footerTop .footerTopArt h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  color: #b97a56;
+}
+footer .footerTop .footerTopArt p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: #909090;
+}
+footer .footerTop .footerTopProduct {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footerTop .footerTopProduct h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+footer .footerTop .footerTopProduct p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #909090;
+}
+footer .footerTop .footerTopContact {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footerTop .footerTopContact h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+footer .footerTop .footerTopContact .phone {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footerTop .footerTopContact .phone i {
+  color: #909090;
+}
+footer .footerTop .footerTopContact .phone p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: #909090;
+}
+footer .footerTop .footerTopContact .icons {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+footer .footerTop .footerTopContact .icons .iconBg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms;
+}
+footer .footerTop .footerTopContact .icons .iconBg i {
+  color: white;
+  font-size: 19px;
+}
+footer .footerTop .footerTopContact .icons :hover {
+  cursor: pointer;
+  background-color: #b97a56;
+}
+footer .footerTop .footerTopContact .icons :hover i {
+  color: black;
+}
+footer .footerTop .footerTopProject {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footerTop .footerTopProject h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+footer .footerTop .footerTopProject .images {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+footer .footerTop .footerTopProject .images img {
+  width: 110px;
+}
+footer .footerBottom {
+  width: 100%;
+  height: 100px;
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerBottom p {
+  color: #b97a56;
+}/*# sourceMappingURL=Footer.css.map */

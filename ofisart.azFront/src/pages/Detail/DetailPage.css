@@ -1,0 +1,75 @@
+.detail {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.detail .detailLeft {
+  width: 60%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail .detailLeft img {
+  -o-object-position: center;
+     object-position: center;
+}
+.detail .detailRight {
+  width: 40%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail .detailRight .service {
+  width: 400px;
+}
+.detail .detailRight .service .spanModel {
+  display: flex;
+  gap: 170px;
+}
+.detail .detailRight .service .spanModel span {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+.detail .detailRight .service .spanDelivery {
+  display: flex;
+  gap: 130px;
+  align-items: center;
+}
+.detail .detailRight .service .spanDelivery .delivery {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+.detail .detailRight .service .spanDelivery span {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+.detail .detailRight .service .spanCountry {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+.detail .detailRight .service .spanCountry span {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+.detail .detailRight .service .spanCountry .country {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+.detail .detailRight .service .model {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+.detail .detailRight .name {
+  font-size: 50px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+.detail .detailRight .description {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+}/*# sourceMappingURL=DetailPage.css.map */

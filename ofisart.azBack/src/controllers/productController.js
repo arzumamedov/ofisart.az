@@ -15,7 +15,7 @@ export const getByIdProducts = async (req, res) => {
     try {
         const { productId } = req.params
         const product = await ProductModel.findById(productId);
-        console.log(product);
+        //console.log(product);
         res.status(200).send(product)
     } catch (error) {
         res.send(error.message)
@@ -24,25 +24,45 @@ export const getByIdProducts = async (req, res) => {
 export const getAllProducts = async (req, res) => {
     try {
         const product = await ProductModel.find();
-        console.log(product);
         res.send(product).status(200)
     } catch (error) {
         res.send(error.message)
     }
 }
-
 export const postProduct = async (req, res) => {
     try {
-        const { name, image,description, country, delivery, categoryId } = req.body;
+        const { name, image, description, country, delivery, categoryId } = req.body;
         console.log(name, image, description, country, delivery, categoryId);
-        
+
         let category = await CategoryModel.find({ _id: categoryId })
         console.log("category", category[0].name);
         category = category[0].name
-        const newProduct = new ProductModel({ name, image,description, country, delivery, category, categoryId });
+        const newProduct = new ProductModel({ name, image, description, country, delivery, category, categoryId });
         await newProduct.save();
         res.send(newProduct);
     } catch (error) {
         res.send(error.message);
+    }
+}
+export const deleteProduct = async (req, res) => {
+    // const { id } = req.params;
+
+    // try {
+    //     const product = await ProductModel.findByIdAndDelete(id);
+    //     if (!product) {
+    //         return res.status(404).json({ error: 'Product not found' });
+    //     }
+    //     await product.deleteOne();
+    //     res.status(200).json({ message: 'Product deleted successfully' });
+    // } catch (error) {
+    //     res.status(500).json({ error: 'Internal Server Error' });
+    // }
+    try {
+        const { id } = req.params;
+        const product = await ProductModel.findByIdAndDelete(id)
+        res.send(product)
+
+    } catch (error) {
+        res.send(error.message)
     }
 }

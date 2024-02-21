@@ -3,7 +3,7 @@ import "./Dashboard.scss";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
-  const [allProducts, setAllProducts] = useState(null);
+  const [allProducts, setAllProducts] = useState([]);
 
   // const fetchAllProducts = async () => {
   //     try {
@@ -26,7 +26,7 @@ const Dashboard = () => {
   return (
     <div className="mainDashboard">
       <Link to={"/dashboardd"}>
-        <button>Next Page</button>
+        <button>Add Product</button>
       </Link>
       <div className="dashboard">
         {allProducts &&

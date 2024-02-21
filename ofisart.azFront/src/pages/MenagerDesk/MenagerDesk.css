@@ -1,0 +1,44 @@
+.menagerDesk {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 10px 14px;
+}
+.menagerDesk .spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.menagerDesk .spinner-container i {
+  font-size: 90px;
+  color: #B97A56;
+}
+.menagerDesk .fa-spinner {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.menagerDesk .card {
+  width: 33%;
+  border: 1px solid gainsboro;
+}
+.menagerDesk .card .name {
+  font-size: 18px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 20px;
+}
+.menagerDesk .card img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 95%;
+}/*# sourceMappingURL=MenagerDesk.css.map */

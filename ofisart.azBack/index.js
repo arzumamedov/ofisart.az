@@ -2,6 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose';
 import cors from 'cors';
 import multer from "multer";
+import 'dotenv/config'
 import {CategoryRouter} from './src/routes/categoryRoutes.js' 
 import { ProductRouter } from './src/routes/productRoutes.js';
 import { AdminRouter } from './src/routes/adminRoutes.js';

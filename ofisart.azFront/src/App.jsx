@@ -14,14 +14,14 @@ import MagazineTable from "./pages/MagazineTable/MagazineTable";
 import MeetingTable from "./pages/MeetingTable/MeetingTable";
 import MenagerDesk from "./pages/MenagerDesk/MenagerDesk";
 import NewProduct from "./pages/NewProduct/NewProduct";
-import Dashboard from "./pages/Private/Dashboard/Dashboard";
-import DashboardNext from "./pages/Private/DashboardNext/DashboardNext";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import Sofa from "./pages/Sofa/Sofa";
 import StaffChair from "./pages/StaffChair/StaffChair";
 import StaffTable from "./pages/StaffTable/StaffTable";
 import Tumba from "./pages/Tumba/Tumba";
 import Wardrobe from "./pages/Wardrobe/Wardrobe";
+import Dashboard from "./pages/Private/Dashboard/Dashboard";
+import DashboardNext from "./pages/Private/DashboardNext/DashboardNext";
 function App() {
   return (
     <>

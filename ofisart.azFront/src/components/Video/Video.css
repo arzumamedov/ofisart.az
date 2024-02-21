@@ -1,0 +1,87 @@
+@charset "UTF-8";
+.video {
+  background-image: url("https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m5-s-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.video:hover {
+  animation: zoomin 10s ease-in-out forwards;
+}
+.video .play {
+  cursor: pointer;
+}
+.video .play:hover .border {
+  transform: scale(1.1);
+}
+.video .play .border {
+  transition: all 600ms;
+  border: 5px solid #b39367;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video .play .border:hover .fa-solid.fa-circle-play {
+  display: block;
+}
+.video .play .border:hover .fa-regular.fa-circle-play {
+  display: none;
+}
+.video .play .border .fa-regular.fa-circle-play {
+  font-size: 60px;
+  color: #b39367;
+}
+.video .play .border .fa-solid.fa-circle-play {
+  display: none;
+  font-size: 60px;
+  color: #b39367;
+}
+.video .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #c7a97f;
+  font-size: 24px;
+  z-index: 3;
+}
+.video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+.video.video-show:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.video.video-show iframe {
+  visibility: visible;
+  opacity: 1;
+}
+@keyframes zoomin {
+  /* Animasyon kuralları buraya eklenecek */
+}/*# sourceMappingURL=Video.css.map */

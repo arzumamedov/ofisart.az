@@ -1,10 +1,11 @@
 import { AdminModel } from "../models/adminSchema.js";
+import jwt from 'jsonwebtoken'
 
 export const loginController = async (req, res) => {
     try {
         const { username, password } = req.body;
 
-        // Check if the user exists in the database
+    
         const user = await AdminModel.findOne({ username });
 
         if (!user) {
@@ -13,7 +14,8 @@ export const loginController = async (req, res) => {
         if (user.password !== password) {
             return res.status(401).json({ error: "password are wrong" });
         }
-        res.status(200).json({ message: "Login successful", user });
+        const token = jwt.sign({ username: user.username }, process.env.JWT_KEY, { expiresIn: '2h' });
+        res.json({ token: token });
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: "Internal Server Error" });
