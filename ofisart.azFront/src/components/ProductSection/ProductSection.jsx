@@ -9,8 +9,8 @@ function ProductSection() {
     return (
         <>
             <div className="productSection">
-                <Link to={'/bestseller'}>
-                    <div className="productCard">
+                <div className="productCard">
+                    <Link to={'/bestseller'}>
                         <div className='image'>
                             <div className='shadow'>
                                 <i class="fa-solid fa-eye"></i>
@@ -18,10 +18,10 @@ function ProductSection() {
                             <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m2-project-1.jpg" alt="" />
                         </div>
                         <h2>{t('title')}</h2>
-                    </div>
-                </Link>
-                <Link to={'/project'}>
-                    <div className="productCard">
+                    </Link>
+                </div>
+                <div className="productCard">
+                    <Link to={'/project'}>
                         <div className='image'>
                             <div className='shadow'>
                                 <i class="fa-solid fa-eye"></i>
@@ -29,19 +29,19 @@ function ProductSection() {
                             <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m2-project-2.jpg" alt="" />
                         </div>
                         <h2>{t('projects')}</h2>
-                    </div>
-                </Link>
-                <Link to={'/newproduct'}>
-                <div className="productCard">
-                    <div className='image'>
-                        <div className='shadow'>
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m2-project-3.jpg" alt="" />
-                    </div>
-                    <h2>{t('newproduct')}</h2>
+                    </Link>
                 </div>
-                </Link>
+                <div className="productCard">
+                    <Link to={'/newproduct'}>
+                        <div className='image'>
+                            <div className='shadow'>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <img src="https://ciri.la-studioweb.com/wp-content/uploads/2022/09/m2-project-3.jpg" alt="" />
+                        </div>
+                        <h2>{t('newproduct')}</h2>
+                    </Link>
+                </div>
             </div>
         </>
     )

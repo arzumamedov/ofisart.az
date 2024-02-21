@@ -1,38 +1,42 @@
-import React, { useEffect, useState } from 'react'
-import './BestSeller.scss'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import './BestSeller.scss';
+import { Link } from 'react-router-dom';
 
 function BestSeller() {
+    const [detail, setDetail] = useState(null);
 
-    const [detail, setDetail] = useState(null)
+    function bestSellerFind() {
+        fetch("http://localhost:3030/api/product/")
+            .then((res) => res.json())
+            .then((api) => setDetail(api));
+    }
 
     useEffect(() => {
-        fetch("http://localhost:3030/bestseller")
-            .then((res) => res.json())
-            .then((api) => setDetail(api))
-    }, [])
-
+        bestSellerFind();
+    }, []);
 
     return (
         <>
-    <div className='bestSeller'>
-      {detail === null ? 
-        <div className="spinner-container">
-          <i className="fa-solid fa-spinner fa-spin"></i>
-        </div>
-        : detail.map((x) => (
-            <div className='card'>
-                <div className='name'>{x.name}</div>
-                <Link to={'/detail/' + x._id}>
-                    <img src={x.image} alt="" />
-                </Link>
+            <div className='bestSeller'>
+                {detail === null ? (
+                    <div className="spinner-container">
+                        <i className="fa-solid fa-spinner fa-spin"></i>
+                    </div>
+                ) : (
+                    detail
+                        .filter((x) => x.delivery === "Mümkündür.") // Filtreleme ekledim
+                        .map((x) => (
+                            <div className='card' key={x._id}>
+                                <div className='name'>{x.name}</div>
+                                <Link to={'/detail/' + x._id}>
+                                    <img src={x.image[0]} alt="" />
+                                </Link>
+                            </div>
+                        ))
+                )}
             </div>
-          ))
-      }
-    </div>
-
         </>
-    )
+    );
 }
 
-export default BestSeller
+export default BestSeller;

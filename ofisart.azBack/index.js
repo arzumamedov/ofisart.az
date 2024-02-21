@@ -6,7 +6,7 @@ import 'dotenv/config'
 import {CategoryRouter} from './src/routes/categoryRoutes.js' 
 import { ProductRouter } from './src/routes/productRoutes.js';
 import { AdminRouter } from './src/routes/adminRoutes.js';
-const upload = multer({ dest: 'public/' })
+const upload = multer({ dest: 'public/' }) 
 const app = express()
 const port = 3030
 app.use(express.json())

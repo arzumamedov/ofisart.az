@@ -7,9 +7,10 @@
     align-items: center;
 
     .productCard {
-        width: 400px;
-        // height: 450px;
-        // background-color: red;
+        width: 100%; /* Adjust width for responsiveness */
+        max-width: 400px; /* Set maximum width */
+        box-sizing: border-box; /* Include padding and border in the total width */
+
         h2 {
             font-family:
                 system-ui,
@@ -24,7 +25,7 @@
 
         .image {
             width: 100%;
-            height: 86%;
+            height: 60%; /* Adjust height for responsiveness */
             position: relative;
             overflow: hidden;
 
@@ -57,7 +58,7 @@
         &:hover {
             cursor: pointer;
             .image img {
-                scale: 1.12;
+                transform: scale(1.12); /* Fix the scale property */
             }
 
             .image .shadow {
@@ -65,6 +66,19 @@
                 height: 71%;
                 opacity: 1;
                 z-index: 99;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .productSection {
+            display: flex;
+            flex-direction: column;
+
+            .productCard {
+                max-width: 100%; /* Adjust maximum width for smaller screens */
+                margin-bottom: 20px; /* Add margin for better spacing */
+                display: flex;
             }
         }
     }
