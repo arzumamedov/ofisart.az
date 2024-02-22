@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './DashboardNext.scss'
+import { useNavigate } from 'react-router-dom';
 
 const DashboardNext = () => {
+    const navigate = useNavigate()
     const [data, setData] = useState([])
     const [input, setInput] = useState('')
     const [sortBy, setSortBy] = useState(null)
@@ -59,6 +61,7 @@ const DashboardNext = () => {
 
 
     return (
+        localStorage.getItem('token')?
         <div className='add'>
 
             <div className="nav"></div>
@@ -175,7 +178,7 @@ const DashboardNext = () => {
 
 
 
-        </div>
+        </div>:navigate("/")
     )
 }
 

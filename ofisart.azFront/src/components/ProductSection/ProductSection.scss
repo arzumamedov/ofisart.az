@@ -69,17 +69,11 @@
             }
         }
     }
+}
 
-    @media (max-width: 768px) {
-        .productSection {
-            display: flex;
-            flex-direction: column;
-
-            .productCard {
-                max-width: 100%; /* Adjust maximum width for smaller screens */
-                margin-bottom: 20px; /* Add margin for better spacing */
-                display: flex;
-            }
-        }
+@media only screen and (max-width:768px) {
+    .productSection {
+        flex-direction: column;
+        height: 200vh;
     }
 }

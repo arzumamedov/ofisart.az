@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Dashboard.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useNavigation } from "react-router-dom";
 
 const Dashboard = () => {
   const [allProducts, setAllProducts] = useState([]);
@@ -15,15 +15,20 @@ const Dashboard = () => {
   //         console.error('Error fetching products:', error);
   //     }
   // };
-
+const [token, settoken] = useState(null)
   useEffect(() => {
     fetch("http://localhost:3030/api/product/")
       .then((res) => res.json())
       .then((api) => setAllProducts(api));
     // fetchAllProducts();
   }, []);
-
+  useEffect(() => {
+    settoken(localStorage.getItem('token'))
+  }, [localStorage.getItem('token')])
+  
+  const navigate = useNavigate()
   return (
+    token?
     <div className="mainDashboard">
       <Link to={"/dashboardd"}>
         <button>Add Product</button>
@@ -42,7 +47,7 @@ const Dashboard = () => {
             </div>
           ))}
       </div>
-    </div>
+    </div>:navigate('/')
   );
 };
 

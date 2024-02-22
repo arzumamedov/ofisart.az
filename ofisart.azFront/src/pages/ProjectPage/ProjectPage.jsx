@@ -23,7 +23,7 @@ function ProjectPage() {
                     : detail.map((x) => (
                         <div className='card'>
                             <div className='name'>{x.name}</div>
-                            <Link to={'/detail/' + x._id}>
+                            <Link to={'/project/detail/' + x._id}>
                                 <img src={x.image} alt="" />
                             </Link>
                         </div>

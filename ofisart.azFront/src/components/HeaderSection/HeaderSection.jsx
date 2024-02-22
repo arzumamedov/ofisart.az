@@ -13,11 +13,23 @@ export default () => {
 
     return (
         <Swiper
-        className='swiper'
+            className='swiper'
             // install Swiper modules
             modules={[Navigation, Keyboard, Pagination, Autoplay, A11y]}
-            spaceBetween={0}
-            slidesPerView={4}
+            breakpoints={{
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+            }}
             navigation={{
                 prevEl: false,
                 nextEl: false,

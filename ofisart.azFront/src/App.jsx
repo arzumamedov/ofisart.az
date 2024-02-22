@@ -14,14 +14,15 @@ import MagazineTable from "./pages/MagazineTable/MagazineTable";
 import MeetingTable from "./pages/MeetingTable/MeetingTable";
 import MenagerDesk from "./pages/MenagerDesk/MenagerDesk";
 import NewProduct from "./pages/NewProduct/NewProduct";
+import Dashboard from "./pages/Private/Dashboard/Dashboard";
+import DashboardNext from "./pages/Private/DashboardNext/DashboardNext";
+import ProjectDetail from "./pages/ProjectDetail/ProjectDetail";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import Sofa from "./pages/Sofa/Sofa";
 import StaffChair from "./pages/StaffChair/StaffChair";
 import StaffTable from "./pages/StaffTable/StaffTable";
 import Tumba from "./pages/Tumba/Tumba";
 import Wardrobe from "./pages/Wardrobe/Wardrobe";
-import Dashboard from "./pages/Private/Dashboard/Dashboard";
-import DashboardNext from "./pages/Private/DashboardNext/DashboardNext";
 function App() {
   return (
     <>
@@ -33,6 +34,7 @@ function App() {
             <Route path="/project" element={<ProjectPage />} />
             <Route path="/newproduct" element={<NewProduct />} />
             <Route path="/detail/:id" element={<DetailPage />} />
+            <Route path="/project/detail/:id" element={<ProjectDetail />} />
             <Route path="/menagerdesk" element={<MenagerDesk />} />
             <Route path="/stafftable" element={<StaffTable />} />
             <Route path="/meetingtable" element={<MeetingTable />} />

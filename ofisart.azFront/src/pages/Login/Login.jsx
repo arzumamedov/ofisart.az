@@ -30,6 +30,7 @@ const Login = () => {
             const data = await response.json();
             if (response.status === 200) {
                 const token = data.token;
+                localStorage.setItem('token', token);
                 navigate('/dashboard')
             }
             console.log(response);
