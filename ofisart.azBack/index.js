@@ -1,20 +1,22 @@
-import express from 'express'
-import mongoose from 'mongoose';
 import cors from 'cors';
+import 'dotenv/config';
+import express from 'express';
+import mongoose from 'mongoose';
 import multer from "multer";
-import 'dotenv/config'
-import {CategoryRouter} from './src/routes/categoryRoutes.js' 
-import { ProductRouter } from './src/routes/productRoutes.js';
 import { AdminRouter } from './src/routes/adminRoutes.js';
-const upload = multer({ dest: 'public/' }) 
+import { CategoryRouter } from './src/routes/categoryRoutes.js';
+import { ProductRouter } from './src/routes/productRoutes.js';
+import { ProjectRouter } from './src/routes/projectRoutes.js';
+const upload = multer({ dest: 'public/' })
 const app = express()
 const port = 3030
 app.use(express.json())
 app.use(cors());
 app.use(express.static('public'))
-app.use('/api/category', CategoryRouter )
-app.use('/api/product', ProductRouter )
-app.use('/api/admin', AdminRouter )
+app.use('/api/category', CategoryRouter)
+app.use('/api/product', ProductRouter)
+app.use('/api/admin', AdminRouter)
+app.use('/api/project', ProjectRouter)
 // const productSchema = new mongoose.Schema({
 //     name: String,
 //     image: String,

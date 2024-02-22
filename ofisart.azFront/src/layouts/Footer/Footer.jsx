@@ -5,19 +5,21 @@ function Footer() {
   const { t, i18n } = useTranslation();
 
 
-  const handleWhatsAppClick = (e) => {
-    e.preventDefault();
-    window.location.href = 'https://web.whatsapp.com/';
-  };
+  // const handleWhatsAppClick = (e) => {
+  //   e.preventDefault();
+  //   window.location.href = 'https://web.whatsapp.com/';
+  // };
 
   return (
     <>
       <footer>
-        <div className='wp' onClick={handleWhatsAppClick}>
-        </div>
+        <a href="https://wa.me/+994515737313" target="_blank">
+          <div className='wp' >
+          </div>
+        </a>
         <div className='footerTop'>
           <div className='footerTopArt'>
-            <h3>OFISART</h3>
+            <h3>OfisArt</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci cumque ipsa libero voluptate sed aperiam, illo laboriosam soluta odit accusantium.</p>
           </div>
           <div className='footerTopProduct'>

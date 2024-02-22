@@ -105,8 +105,8 @@ const DashboardNext = () => {
                     {/* <label htmlFor="categoryId">CategoryId</label>
                     <Field name="categoryId" type="text" />
                     <ErrorMessage name="categoryId" /> */}
-                    <select name="product" id="product">
-                        <option value="65ce8a7588d10110e61590a5">Menecer Masaları</option>
+                    <select className='select' name="product" id="product">
+                        <option className='option' value="65ce8a7588d10110e61590a5">Menecer Masaları</option>
                         <option value="65ce8a9588d10110e61590a7">İşçi masaları</option>
                         <option value="65ce8a9d88d10110e61590a9">İclas masaları</option>
                         <option value="65ce8ab188d10110e61590ab">Home Ofis masaları</option>
@@ -135,19 +135,18 @@ const DashboardNext = () => {
             <div className="buttons">
                 <button onClick={() => setSortBy({ preporty: 'name', asc: true })}>A-Z</button>
                 <button onClick={() => setSortBy({ preporty: 'name', asc: false })}>Z-A</button>
-                <button onClick={() => setSortBy({ preporty: 'price', asc: true })}>INCREASE</button>
-                <button onClick={() => setSortBy({ preporty: 'price', asc: false })}>DECREASE</button>
                 <button onClick={() => setSortBy(null)}>DEFAULT</button>
             </div>
 
-            <table border={1}>
+            <table className='custom-table' border={1}>
                 <tr>
-                    <th>Image</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Country</th>
-                    <th>Delivery</th>
-                    <th>Category</th>
+                    <th className="custom-header">Image</th>
+                    <th className="custom-header">Name</th>
+                    <th className="custom-header">Description</th>
+                    <th className="custom-header">Country</th>
+                    <th className="custom-header">Delivery</th>
+                    <th className="custom-header">Category</th>
+                    <th className="custom-header">Delete</th>
                 </tr>
 
                 {data
@@ -163,7 +162,7 @@ const DashboardNext = () => {
                     })
                     .map(item => (
                         <tr>
-                            <td><img width={80} src={item.image[0]} alt="" /></td>
+                            <td><img width={500} src={item.image[0]} alt="" /></td>
                             <td>{item.name}</td>
                             <td>{item.description}</td>
                             <td>{item.country}</td>

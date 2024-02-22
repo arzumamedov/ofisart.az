@@ -8,9 +8,9 @@ const productSchema = new Schema({
   description: String,
   country: String, 
   delivery: String,
-  category: String,//
+  category: String,
   categoryId: { type: Schema.Types.ObjectId, ref: 'Category' },
-  createdAt: { type: Date, default: Date.now }//
+  createdAt: { type: Date, default: Date.now }
 
 });
 export const ProductModel = mongoose.model('Product', productSchema);

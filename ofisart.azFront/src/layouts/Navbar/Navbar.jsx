@@ -19,68 +19,64 @@ const Navbar = () => {
         </section>
         <section className="navbar__center">
           <div className="menu">
-            {/* <div className="menu__header">
-              <span className="menu__arrow"><i className="bx bx-chevron-left"></i></span>
-              <span className="menu__title"></span>
-            </div> */}
+
             <u className="menu__inner">
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
                   {t('products')}
                   <i class="fa-solid fa-angle-up"></i>
-                  {/* <i className="bx bx-chevron-right"></i> */}
                 </a>
                 <div className="submenu megamenu__text">
                   <div className="submenu__inner">
                     <h4 className="submenu__title">{t('table')}</h4>
                     <ul className="submenu__list">
                       <Link to={'/menagerdesk'}><li>{t('manager')}</li></Link>
-                      <Link to={'/stafftable'}><li>İşçi masaları</li></Link>
-                      <Link to={'/meetingtable'}><li>İclas masaları</li></Link>
-                      <Link to={'/homeofficedesk'}><li>Home ofis masaları</li></Link>
-                    </ul>
-                  </div>
-
-
-                  <div className="submenu__inner">
-                    <h4 className="submenu__title">Divan/Kreslo</h4>
-                    <ul className="submenu__list">
-                      <Link to={'/executivechair'}><li>Menecer kresloları</li></Link>
-                      <Link to={'/staffchair'}><li>İşçi kresloları</li></Link>
-                      <Link to={'/sofa'}><li>Divanlar</li></Link>
-                    </ul>
-                  </div>
-
-
-
-
-                  <div className="submenu__inner">
-                    <h4 className="submenu__title">Dolab</h4>
-                    <ul className="submenu__list">
-                      <Link to={'/wardrobe'}><li>Rəfli dolablar</li></Link>
-                      <Link to={'/filingcabinet'}><li>Sənəd dolabları</li></Link>
-                      <Link to={'/tumba'}><li>Tumbalar</li></Link>
-                      <Link to={'/dresser'}><li>Kamodlar</li></Link>
-                      <Link><li>Müştəri qəbul masası</li></Link>
+                      <Link to={'/stafftable'}><li>{t('workerdesk')}</li></Link>
+                      <Link to={'/meetingtable'}><li>{t('meetingtables')}</li></Link>
+                      <Link to={'/homeofficedesk'}><li>{t('homeofficedesks')}</li></Link>
+                      <Link to={'/magazinetable'}><li>{t('magazinetable')}</li></Link>
 
                     </ul>
                   </div>
 
 
+                  <div className="submenu__inner">
+                    <h4 className="submenu__title">{t('sofa/armchair')}</h4>
+                    <ul className="submenu__list">
+                      <Link to={'/executivechair'}><li>{t('managerchair')}</li></Link>
+                      <Link to={'/staffchair'}><li>{t('workchairs')}</li></Link>
+                      <Link to={'/sofa'}><li>{t('sofas')}</li></Link>
+                    </ul>
+                  </div>
+
+
+
 
                   <div className="submenu__inner">
-                    <h4 className="submenu__title">Digər</h4>
+                    <h4 className="submenu__title">{t('closet')}</h4>
                     <ul className="submenu__list">
-                      <Link to={'/hanger'}><li>Paltar asqılıqları</li></Link>
-                      <Link to={'/magazinetable'}><li>Jurnal masaları</li></Link>
-                      {/* <Link to={'/accessory'}><li>Aksesuarlar</li></Link> */}
+                      <Link to={'/wardrobe'}><li>{t('shelves')}</li></Link>
+                      <Link to={'/filingcabinet'}><li>{t('filingcabinets')}</li></Link>
+                      <Link to={'/tumba'}><li>{t('tumba')}</li></Link>
+                      <Link to={'/dresser'}><li>{t('dresser')}</li></Link>
+
+                    </ul>
+                  </div>
+
+
+
+                  <div className="submenu__inner">
+                    <h4 className="submenu__title">{t('other')}</h4>
+                    <ul className="submenu__list">
+                      <Link to={'/hanger'}><li>{t('clotheshangers')}</li></Link>
+                      <Link to={'/accessory'}><li>{t('accessories')}</li></Link>
                     </ul>
                   </div>
 
                   {/* Diğer alt menüler */}
                 </div>
               </li>
-              <li className="menu__item"><Link to={'/'}><a href="#" className="menu__link">{t('projectsf')}</a></Link></li>
+              <li className="menu__item"><Link to={'/project'}><a href="#" className="menu__link">{t('projectsf')}</a></Link></li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
                   {t('about')}

@@ -7,7 +7,7 @@ function Accessory() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65cf418e2072888a8aa42e64")
+        fetch("http://localhost:3030/api/product/65cf41eb2072888a8aa42e6a")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

@@ -6,8 +6,8 @@
     "about": "Haqqımızda",
     "contact": "Əlaqə",
     "tables": "Masalar",
-    "table":"Masa",
-    "manager":"Menecer masaları",
+    "table": "Masa",
+    "manager": "Menecer masaları",
     "sofas/armchairs": "Divanlar/Kreslolar",
     "closets": "Dolablar",
     "other": "Digər",
@@ -16,6 +16,20 @@
     "design": "Heç vaxt olmadığı kimi dizayn və lüks",
     "crafted": "Çünki o, ən gözəl dizayndır",
     "furniture": "Çox layiq olduğunuz mebel",
-    "luxury":"Əvvəllər heç kimin ala bilmədiyi lüks"
-
+    "luxury": "Əvvəllər heç kimin ala bilmədiyi lüks",
+    "workerdesk": "İşçi masaları",
+    "meetingtables": "Iclas Masaları",
+    "homeofficedesks": "Ev Ofisi Masaları",
+    "magazinetable": "Jurnal Masaları",
+    "managerchair": "Menecer Kresloları",
+    "workchairs": "İşçi kresloları",
+    "sofas": "Divanlar",
+    "shelves": "Rəfli Dolablar",
+    "filingcabinets": "Sənəd Dolabları",
+    "tumba":"Tumbalar",
+    "dresser":"Kamodlar",
+    "clotheshangers":"Paltar Asqılıqları",
+    "accessories":"Aksesuarlar",
+    "sofa/armchair":"Divan/Kreslo",
+    "closet":"Dolab"
 }

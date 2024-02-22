@@ -7,7 +7,7 @@ function ProjectPage() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/project")
+        fetch("http://localhost:3030/api/project/")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
