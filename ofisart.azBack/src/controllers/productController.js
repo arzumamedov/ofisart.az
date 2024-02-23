@@ -66,3 +66,22 @@ export const deleteProduct = async (req, res) => {
         res.send(error.message)
     }
 }
+
+export const updateProductById = async (req, res) => {
+    const { id } = req.params;
+    const { image, name, description, counrty, delivery, category } =
+        req.body;
+    try {
+        const product = await ProductModel.findByIdAndUpdate(id, {
+            name,
+            image,
+            description,
+            counrty,
+            delivery,
+            category,
+        });
+        res.send(product);
+    } catch (error) {
+        res.send(error.message);
+    }
+};

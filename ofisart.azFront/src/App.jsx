@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Mainlayout from "./layouts/Mainlayout/Mainlayout";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Accessory from "./pages/Accessory/Accessory";
 import BestSeller from "./pages/BestSeller/BestSeller";
 import DetailPage from "./pages/Detail/DetailPage";
@@ -22,8 +23,8 @@ import Sofa from "./pages/Sofa/Sofa";
 import StaffChair from "./pages/StaffChair/StaffChair";
 import StaffTable from "./pages/StaffTable/StaffTable";
 import Tumba from "./pages/Tumba/Tumba";
+import UpdatePage from "./pages/UpdatePage/UpdatePage";
 import Wardrobe from "./pages/Wardrobe/Wardrobe";
-import AboutUs from "./pages/AboutUs/AboutUs";
 function App() {
   return (
     <>
@@ -54,6 +55,8 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/dashboardd" element={<DashboardNext />} />
             <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/updateproduct/:id" element={<UpdatePage />} />
+
 
 
             {/* <Route path='/login' element={<YourComponent />} /> */}

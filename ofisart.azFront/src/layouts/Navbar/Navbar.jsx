@@ -98,8 +98,6 @@ const Navbar = () => {
                   <ul className="submenu__list">
                     <Link to={'/login'}><li>Login</li></Link>
                     <Link><li onClick={resetToken}>Log out</li></Link>
-                    <Link><li>Track Order</li></Link>
-                    <Link><li>Help</li></Link>
                   </ul>
                 </div>
               </li>
