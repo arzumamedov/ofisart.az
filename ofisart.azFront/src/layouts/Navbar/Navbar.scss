@@ -231,6 +231,10 @@ img {
                     transition: transform 0.3s ease;
                 }
             }
+            a{
+                color: #b97a56;
+                font-size: 16px;
+            }
 
             &.menu__dropdown {
                 @media (min-width: $breakpoint) {

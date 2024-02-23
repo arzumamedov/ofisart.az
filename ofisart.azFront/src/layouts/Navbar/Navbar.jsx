@@ -87,9 +87,7 @@ const Navbar = () => {
               </li>
               <li className="menu__item"><Link to={'/project'}><a href="#" className="menu__link">{t('projectsf')}</a></Link></li>
               <li className="menu__item menu__dropdown">
-                <a href="#" className="menu__link">
-                  {t('about')}
-                </a>
+                <Link to={'/aboutus'}><li>{t('about')}</li></Link>
               </li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
@@ -123,7 +121,7 @@ const Navbar = () => {
           <hr />
           <Link to={'/project'}><li>{t('projectsf')}</li></Link>
           <hr />
-          <li>{t('about')}</li>
+          <Link to={'/aboutus'}><li>{t('about')}</li></Link>
           <hr />
           <li>{t('contact')}
           </li>

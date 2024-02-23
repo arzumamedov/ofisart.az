@@ -23,6 +23,7 @@ import StaffChair from "./pages/StaffChair/StaffChair";
 import StaffTable from "./pages/StaffTable/StaffTable";
 import Tumba from "./pages/Tumba/Tumba";
 import Wardrobe from "./pages/Wardrobe/Wardrobe";
+import AboutUs from "./pages/AboutUs/AboutUs";
 function App() {
   return (
     <>
@@ -52,6 +53,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/dashboardd" element={<DashboardNext />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+
 
             {/* <Route path='/login' element={<YourComponent />} /> */}
           </Route>

@@ -7,6 +7,7 @@ import { AdminRouter } from './src/routes/adminRoutes.js';
 import { CategoryRouter } from './src/routes/categoryRoutes.js';
 import { ProductRouter } from './src/routes/productRoutes.js';
 import { ProjectRouter } from './src/routes/projectRoutes.js';
+import { NewProductRouter } from './src/routes/newproductRoutes.js';
 const upload = multer({ dest: 'public/' })
 const app = express()
 const port = 3030
@@ -17,6 +18,7 @@ app.use('/api/category', CategoryRouter)
 app.use('/api/product', ProductRouter)
 app.use('/api/admin', AdminRouter)
 app.use('/api/project', ProjectRouter)
+app.use('/api/newproduct',NewProductRouter)
 // const productSchema = new mongoose.Schema({
 //     name: String,
 //     image: String,

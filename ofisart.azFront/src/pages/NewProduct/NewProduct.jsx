@@ -7,7 +7,7 @@ function NewProduct() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/newproduct")
+        fetch("http://localhost:3030/api/newproduct")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
