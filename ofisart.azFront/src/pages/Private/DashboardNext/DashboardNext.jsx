@@ -149,7 +149,8 @@ const DashboardNext = () => {
                         <th className="custom-header">Country</th>
                         <th className="custom-header">Delivery</th>
                         <th className="custom-header">Category</th>
-                        <th className="custom-header">Delete</th>
+                        <th className="custom-header">Update</th>
+                        <th>Delete</th>
                     </tr>
 
                     {data
@@ -172,8 +173,7 @@ const DashboardNext = () => {
                                 <td>{item.delivery}</td>
                                 <td>{item.category}</td>
                                 <td><Link to={`/updateproduct/${item._id}`}><button>Update</button></Link></td>
-
-                                {/* <td><i className="fa-solid fa-trash-can" onClick={() => handleDelete(item._id)} ></i></td> */}
+                                <td><i className="fa-solid fa-trash-can" onClick={() => handleDelete(item._id)} ></i></td>
                             </tr>
                         ))}
                 </table>

@@ -44,7 +44,7 @@ function UpdatePage() {
         setDescription(res.description);
         setCountry(res.country);
         setDelivery(res.delivery);
-        setCategory(res.category)
+        setCategory(res.category);
         console.log(res);
 
     }
