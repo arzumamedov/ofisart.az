@@ -225,6 +225,12 @@ img {
             display: flex;
             align-items: center;
             justify-content: center;
+            &:hover {
+                .fa-angle-up {
+                    transform: rotate(180deg);
+                    transition: transform 0.3s ease;
+                }
+            }
 
             &.menu__dropdown {
                 @media (min-width: $breakpoint) {
@@ -248,6 +254,9 @@ img {
                 color: #b97a56;
                 text-transform: capitalize;
                 transition: all 0.25s ease;
+                // &:hover {
+
+                // }
 
                 // @media (max-width: $breakpoint - 1) {
                 //     justify-content: space-between;
@@ -623,21 +632,25 @@ img {
     }
 }
 
-.burgerMenu {display: none;}
-.burgerList {display: none;}
+.burgerMenu {
+    display: none;
+}
+.burgerList {
+    display: none;
+}
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     .menu__inner {
         display: none !important;
     }
 
-    .navbar__right {
-        display: none !important;
-    }
+    // .navbar__right {
+    //     display: none !important;
+    // }
 
     .navbar {
         display: flex !important;
-        flex-direction: row !important;
+        justify-content: space-evenly !important;
     }
 
     .burgerMenu {
@@ -659,7 +672,7 @@ img {
         justify-content: center;
         align-items: center;
         gap: 20px;
-        background-color:#1a1717;
+        background-color: #1a1717;
         color: #b97a56;
         width: 100%;
         // padding: 25px 0;
@@ -667,11 +680,12 @@ img {
         overflow: hidden;
         // max-height: 350px;
         max-height: 350px;
-        transition: .3s;
+        transition: 0.3s;
     }
 
     .burgerList li {
         font-size: 1.1rem;
+        color: #b97a56;
         // border-bottom: 2px solid #b97a56;
     }
     .burgerList hr {
@@ -680,6 +694,12 @@ img {
         color: #b97a56;
     }
 
-    .burgerOpen {height: 350px ; transition: .3s;}
-    .burgerClose {max-height: 0; transition: .3s;}
+    .burgerOpen {
+        height: 350px;
+        transition: 0.3s;
+    }
+    .burgerClose {
+        max-height: 0;
+        transition: 0.3s;
+    }
 }

@@ -19,7 +19,7 @@ function ProjectDetail() {
 
   return (
     <>
-      <div className="detail">
+      <div className="projectDetail">
         <div className="detailLeft">
           <Slider image={detail?.image} />
           {/* <Slider image={`../../assets/ProjectImage/${detail?.image}`} /> */}
@@ -30,16 +30,13 @@ function ProjectDetail() {
           <div className="description">{detail.description}</div>
           <div className="service">
             <div className="spanCountry">
-              <span>İstehsalçı ölkə:</span>{" "}
-              <div className="country"> {detail.country}</div>
+              <span>Məkan:</span>{" "}
+              <div className="country"> {detail.location}</div>
             </div>
-            <div className="spanDelivery">
-              <span>Çatdırılma:</span>{" "}
-              <div className="delivery"> {detail.delivery}</div>
-            </div>
-            <div className="spanModel">
+
+            {/* <div className="spanModel">
               <span>Model:</span> <div className="model"> {detail.name}</div>
-            </div>
+            </div> */}
 
             <div></div>
           </div>

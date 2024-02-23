@@ -7,7 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [burger, setBurger] = useState(false)
-  const resetToken = ()=>{
+  const resetToken = () => {
     localStorage.removeItem('token');
 
   }
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div> */}
             <u className="menu__inner">
               <li className="menu__item menu__dropdown">
-                <a href="#" className="menu__link">
+                <a href="" className="menu__link">
                   {t('products')}
                   <i class="fa-solid fa-angle-up"></i>
                   {/* <i className="bx bx-chevron-right"></i> */}
@@ -43,6 +43,8 @@ const Navbar = () => {
                       <Link to={'/stafftable'}><li>İşçi masaları</li></Link>
                       <Link to={'/meetingtable'}><li>İclas masaları</li></Link>
                       <Link to={'/homeofficedesk'}><li>Home ofis masaları</li></Link>
+                      <Link to={'/magazinetable'}><li>Jurnal masaları</li></Link>
+
                     </ul>
                   </div>
 
@@ -66,7 +68,6 @@ const Navbar = () => {
                       <Link to={'/filingcabinet'}><li>Sənəd dolabları</li></Link>
                       <Link to={'/tumba'}><li>Tumbalar</li></Link>
                       <Link to={'/dresser'}><li>Kamodlar</li></Link>
-                      <Link><li>Müştəri qəbul masası</li></Link>
 
                     </ul>
                   </div>
@@ -77,8 +78,7 @@ const Navbar = () => {
                     <h4 className="submenu__title">Digər</h4>
                     <ul className="submenu__list">
                       <Link to={'/hanger'}><li>Paltar asqılıqları</li></Link>
-                      <Link to={'/magazinetable'}><li>Jurnal masaları</li></Link>
-                      {/* <Link to={'/accessory'}><li>Aksesuarlar</li></Link> */}
+                      <Link to={'/accessory'}><li>Aksesuarlar</li></Link>
                     </ul>
                   </div>
 
@@ -90,19 +90,11 @@ const Navbar = () => {
                 <a href="#" className="menu__link">
                   {t('about')}
                 </a>
-                {/* <div className="submenu megamenu__image">
-                  <div className="submenu__inner">
-                    <a href="#">
-                      <img src="https://plus.unsplash.com/premium_photo-1677013011737-ba61149ba70c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="submenu-image" alt="" />
-                      <span className="submenu__title">Home</span>
-                    </a>
-                  </div>
-                </div> */}
               </li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
                   {t('contact')}
-                  <i className="bx bx-chevron-right"></i>
+                  <i class="fa-solid fa-angle-up"></i>
                 </a>
                 <div className="submenu megamenu__normal">
                   <ul className="submenu__list">
@@ -123,18 +115,24 @@ const Navbar = () => {
           <button onClick={() => i18n.changeLanguage("en")}>en</button>
         </section>
         <div className='burgerMenu'>
-          <RxHamburgerMenu className='burgerIcon' onClick={()=>{setBurger(!burger)}} />
+          <RxHamburgerMenu className='burgerIcon' onClick={() => { setBurger(!burger) }} />
         </div>
         <ul className={`burgerList ${burger ? 'burgerOpen' : 'burgerClose'}`}>
           <hr />
-          <li>Product</li>
+          <Link to={'/bestseller'}><li>{t('products')}</li></Link>
           <hr />
-          <li>Projects</li>
+          <Link to={'/project'}><li>{t('projectsf')}</li></Link>
           <hr />
-          <li>About us</li>
+          <li>{t('about')}</li>
           <hr />
-          <li>Contact</li>
+          <li>{t('contact')}
+          </li>
           <hr />
+          <section className="navbar__right">
+            <button onClick={() => i18n.changeLanguage("az")}>az</button>
+            <button onClick={() => i18n.changeLanguage("ru")}>ru</button>
+            <button onClick={() => i18n.changeLanguage("en")}>en</button>
+          </section>
         </ul>
       </nav>
     </header>

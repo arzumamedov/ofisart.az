@@ -1,0 +1,123 @@
+.projectDetail {
+    width: 100%;
+    min-height: 100vh;
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    .detailLeft {
+        width: 60%;
+        min-height: 100vh;
+        // background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            object-position: center;
+        }
+    }
+    .detailRight {
+        width: 40%;
+        height: 500px;
+        // background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // align-items: center;
+        // justify-content: center;
+        .service {
+            // background-color: aqua;
+            width: 400px;
+            .spanModel {
+                display: flex;
+                gap: 95px;
+                span {
+                    font-size: 25px;
+                    font-family:
+                        system-ui,
+                        -apple-system,
+                        "Segoe UI",
+                        "Open Sans",
+                        "Helvetica Neue",
+                        sans-serif;
+                }
+            }
+            .spanDelivery {
+                display: flex;
+                gap: 130px;
+                align-items: center;
+                .delivery {
+                    font-size: 25px;
+                    font-family:
+                        system-ui,
+                        -apple-system,
+                        "Segoe UI",
+                        "Open Sans",
+                        "Helvetica Neue",
+                        sans-serif;
+                }
+                span {
+                    font-size: 25px;
+                    font-family:
+                        system-ui,
+                        -apple-system,
+                        "Segoe UI",
+                        "Open Sans",
+                        "Helvetica Neue",
+                        sans-serif;
+                }
+            }
+            .spanCountry {
+                display: flex;
+                gap: 90px;
+                align-items: center;
+                span {
+                    font-size: 25px;
+                    font-family:
+                        system-ui,
+                        -apple-system,
+                        "Segoe UI",
+                        "Open Sans",
+                        "Helvetica Neue",
+                        sans-serif;
+                }
+                .country {
+                    font-size: 25px;
+                    font-family:
+                        system-ui,
+                        -apple-system,
+                        "Segoe UI",
+                        "Open Sans",
+                        "Helvetica Neue",
+                        sans-serif;
+                }
+            }
+
+            .model {
+                font-size: 25px;
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    "Segoe UI",
+                    "Open Sans",
+                    "Helvetica Neue",
+                    sans-serif;
+            }
+        }
+        .name {
+            font-size: 50px;
+            font-family:
+                system-ui,
+                -apple-system,
+                "Segoe UI",
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-weight: 300;
+        }
+        .description {
+            font-size: 22px;
+            font-weight: 500;
+            font-family: "Nunito", sans-serif;
+        }
+    }
+}

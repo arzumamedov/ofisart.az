@@ -3,7 +3,7 @@ import './ProjectPage.scss'
 import { Link } from 'react-router-dom'
 
 function ProjectPage() {
-
+    
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
@@ -23,8 +23,9 @@ function ProjectPage() {
                     : detail.map((x) => (
                         <div className='card'>
                             <div className='name'>{x.name}</div>
+                            {/* <div className='location'>{x.location}</div> */}
                             <Link to={'/project/detail/' + x._id}>
-                                <img src={x.image} alt="" />
+                                <img src={x.image[0]} alt="" />
                             </Link>
                         </div>
                     ))
