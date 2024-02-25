@@ -5,6 +5,9 @@
     .aboutUsTopLeft {
         width: 50%;
         min-height: 100vh;
+        img{
+            width: 100%;
+        }
     }
     .aboutUsTopRight {
         width: 50%;
@@ -91,6 +94,9 @@
     .aboutUsBottomRight {
         width: 50%;
         min-height: 100vh;
+        img{
+            width: 100%;
+        }
         // background-color: green;
     }
 }
