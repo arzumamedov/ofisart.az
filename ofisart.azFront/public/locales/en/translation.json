@@ -26,15 +26,23 @@
     "sofas": "Sofas",
     "shelves": "Shelves",
     "filingcabinets": "Filing Cabinets",
-    "tumba":"Tumbas",
-    "dresser":"Dresser",
-    "clotheshangers":"Clothes Hangers",
-    "accessories":"Accessories",
-    "sofa/armchair":"Sofa/Armchair",
-    "closet":"Closet"
-
-
-
+    "tumba": "Tumbas",
+    "dresser": "Dresser",
+    "clotheshangers": "Clothes Hangers",
+    "accessories": "Accessories",
+    "sofa/armchair": "Sofa/Armchair",
+    "closet": "Closet",
+    "who": "Who Are We?",
+    "whodesc": "OfisArt is a furniture brand established in 2020 and our mission is to make your workplaces and offices more functional, comfortable and eye-catching by combining art and aesthetics. Customer satisfaction is our priority and we keep our quality standards high accordingly. At OfisArt, we aim to provide our customers with unique furniture experiences and guarantee long-lasting quality with each of our products. From office furniture to conference room arrangements, from ergonomic chairs to storage solutions, we help you reinvent your workplace with our wide range of products. Make your workplaces more functional, more stylish and more comfortable with OfisArt.",
+    "manifest": "Our Manifest",
+    "manifestdesc": "As the OfisArt team, we set out with the vision of turning workplaces and offices into works of art, not just furniture. Furniture is not just an object, but a form of art that reflects the character of your workplaces and provides the perfect balance between aesthetic expression and functionality.",
+    "manifestfirst": "We combine aesthetics and function.",
+    "manifestsecond":"We support creativity by bringing art into the workplace.",
+    "manifestthird":"Customer satisfaction is our priority.",
+    "manifestfourth":"We are distinguished by our modern design and quality production.",
+    "manifestfifth":"We are here to make your offices more comfortable and efficient.",
+    "login": "Log In",
+    "logout":"Log Out"
 
 
 

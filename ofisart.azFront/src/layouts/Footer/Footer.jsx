@@ -64,7 +64,7 @@ function Footer() {
           </div>
         </div>
         <div className='footerBottom'>
-          <p>Copyright © 1996·2024 OfisArt Ofis Mebelləri. Bütün hüquqlar qorunur.</p>
+          <p>Copyright © 1996·2024 OfisArt Ofis Mebelləri. <span>Bütün hüquqlar qorunur.</span></p>
         </div>
       </footer>
     </>

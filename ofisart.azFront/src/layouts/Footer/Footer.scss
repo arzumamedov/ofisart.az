@@ -222,7 +222,6 @@ footer {
                 flex-wrap: wrap;
                 img {
                     max-width: 110px;
-                    // height: 100px;
                 }
             }
         }
@@ -234,14 +233,63 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        p{
+        p {
             color: #b97a56;
         }
     }
 }
 
-@media only screen and (max-width:768px) {
-    .footerTop {
-        flex-direction: column;
+@media only screen and (max-width: 768px) {
+    footer {
+        .wp {
+            // background-color: aqua;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        .footerTop {
+            flex-direction: column;
+            align-items: center;
+            .footerTopArt {
+                // background-color: aqua;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .footerTopProduct {
+                // background-color: aqua;
+                align-items: center;
+                justify-content: center;
+            }
+            .footerTopContact {
+                text-align: center;
+                .phone {
+                    justify-content: center;
+                }
+                .icons {
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .footerTopProject{
+            align-items: center;
+            .images{
+                justify-content: center;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .footerBottom{
+        p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

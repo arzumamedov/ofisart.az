@@ -74,6 +74,16 @@
 @media only screen and (max-width:768px) {
     .productSection {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: 200vh;
+        .productCard{
+            text-align: center;
+            .image{
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
     }
 }
