@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Slider from "../../components/Slider/Slider";
 import "./DetailPage.scss";
+import { Helmet } from "react-helmet";
 function DetailPage() {
   const [detail, setDetail] = useState([]);
   const { id } = useParams();
 
-//   const [zoomed, setZoomed] = useState(false);
-//   const [position, setPosition] = useState({ x: 0, y: 0 });
+  //   const [zoomed, setZoomed] = useState(false);
+  //   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     fetch(`http://localhost:3030/api/product/id/${id}`)
@@ -19,10 +20,12 @@ function DetailPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Deatil</title>
+      </Helmet>
       <div className="detail">
         <div className="detailLeft">
           <Slider image={detail?.image} />
-          {/* <ScalableElement>    */}
         </div>
         <div className="detailRight">
           <div className="name">{detail.name} </div>
@@ -43,10 +46,9 @@ function DetailPage() {
             <div></div>
           </div>
         </div>
-        {/* <h1>salam</h1> */}
       </div>
     </>
   );
 }
+export default DetailPage
 
-export default DetailPage;

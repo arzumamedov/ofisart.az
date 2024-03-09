@@ -2,3 +2,10 @@
     width: 100%;
     min-height: 115vh;
 }
+@media only screen and (max-width: 768px) {
+    .slider{
+        width: 50%;
+        height: 900px;
+        
+    }
+}

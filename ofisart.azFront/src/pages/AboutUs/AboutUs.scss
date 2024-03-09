@@ -4,8 +4,8 @@
     display: flex;
     .aboutUsTopLeft {
         width: 50%;
-        min-height: 100vh;
-        img{
+        // min-height: 100vh;
+        img {
             width: 100%;
         }
     }
@@ -26,19 +26,19 @@
                 "Open Sans",
                 "Helvetica Neue",
                 sans-serif;
-                font-weight: 400;
+            font-weight: 400;
         }
         p {
             font-size: 17px;
             font-family: "Roboto";
             text-align: justify;
             font-family:
-            system-ui,
-            -apple-system,
-            "Segoe UI",
-            "Open Sans",
-            "Helvetica Neue",
-            sans-serif;
+                system-ui,
+                -apple-system,
+                "Segoe UI",
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
         }
     }
 }
@@ -63,20 +63,19 @@
                 "Open Sans",
                 "Helvetica Neue",
                 sans-serif;
-                font-weight: 400;
-
+            font-weight: 400;
         }
         p {
             font-size: 17px;
             font-family: "Roboto";
             text-align: justify;
             font-family:
-            system-ui,
-            -apple-system,
-            "Segoe UI",
-            "Open Sans",
-            "Helvetica Neue",
-            sans-serif;
+                system-ui,
+                -apple-system,
+                "Segoe UI",
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
         }
         li {
             list-style: disc;
@@ -93,10 +92,63 @@
     }
     .aboutUsBottomRight {
         width: 50%;
-        min-height: 100vh;
-        img{
+        // min-height: 100vh;
+        img {
             width: 100%;
         }
         // background-color: green;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutUsTop {
+        // background-color: aqua;
+        flex-direction: column;
+        padding: 25px 10px;
+        .aboutUsTopLeft {
+            // background-color: yellow;
+            width: 100%;
+            // height: 200px !important;
+        }
+        .aboutUsTopRight {
+            // background-color: red;
+            width: 100%;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .aboutUsBottom {
+        // background-color: aqua;
+        flex-direction: column;
+        padding: 25px 10px;
+        .aboutUsBottomRight {
+            // background-color: yellow;
+            width: 100%;
+            // height: 200px !important;
+            img {
+            }
+        }
+        .aboutUsBottomLeft {
+            // background-color: red;
+            width: 100%;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+                ol {
+                    // background-color: green;
+                    li {
+                        font-size: 13px;
+                        // background-color: yellow;
+                    }
+                }
+            }
+           
+        }
     }
 }

@@ -18,18 +18,16 @@ $s: 400px; /* the size */
 
         > img {
             grid-area: 1/1;
-            width: $s;
+            width: 400px;
             aspect-ratio: 1;
             object-fit: cover;
             border-radius: 50%;
-            transform: translate(var(--_x, 0), var(--_y, 0));
+            // transform: translate(var(--_x, 0), var(--_y, 0));
             cursor: pointer;
             z-index: 0;
             transition:
                 0.3s,
                 z-index 0s 0.3s;
-            width: 100%;
-
             &:hover {
                 --_i: 1;
                 z-index: 1;

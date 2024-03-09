@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './BestSeller.scss';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function BestSeller() {
     const [detail, setDetail] = useState(null);
@@ -17,6 +18,9 @@ function BestSeller() {
 
     return (
         <>
+            <Helmet>
+                <title>Best Seller</title>
+            </Helmet>
             <div className='bestSeller'>
                 {detail === null ? (
                     <div className="spinner-container">

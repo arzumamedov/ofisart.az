@@ -1,7 +1,10 @@
 import React, { useContext, useEffect } from "react";
 import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Form, useNavigate, useParams } from "react-router-dom";
 import "./UpdatePage.scss";
+import { ErrorMessage, Field, Formik } from "formik";
+import * as Yup from 'yup';
+
 
 function UpdatePage() {
     const { id } = useParams();
@@ -58,78 +61,69 @@ function UpdatePage() {
     }
 
     return (
-        <div>
-            <div id="newsUpdate">
-                <div className="container">
-                    <h1>News Update</h1>
-                    <form action="#" onSubmit={() => { handleSubmit() }}>
-                        <div className="image_url change">
-                            <h2>Image Url</h2>
-                            <textarea
-                                type="text"
-                                value={image}
-                                onChange={(e) => handleChange(e, setImage)}
-                                name=""
-                                id=""
-                                cols="30"
-                                rows="10"
-                            ></textarea>
-                        </div>
-                        <div className="name change">
-                            <h2>Name</h2>
-                            <textarea
-                                type="text"
-                                value={name}
-                                onChange={(e) => handleChange(e, setName)}
-                                name=""
-                                id=""
-                                cols="20"
-                                rows="7"
-                            ></textarea>
-                        </div>
-
-                        <div className="about change">
-                            <h2>Description</h2>
-                            <textarea
-                                className="about"
-                                type="text"
-                                value={description}
-                                onChange={(e) => handleChange(e, setDescription)}
-                                name=""
-                                id=""
-                                cols="30"
-                                rows="10"
-                            ></textarea>
-                        </div>
-                        <div className="category change">
-                            <h2>Counrty</h2>
-                            <input
-                                type="text"
-                                value={country}
-                                onChange={(e) => handleChange(e, setCountry)}
-                            />
-                        </div>
-                        <div className="category change">
-                            <h2>Delivery</h2>
-                            <input
-                                type="text"
-                                value={delivery}
-                                onChange={(e) => handleChange(e, setDelivery)}
-                            />
-                        </div>
-                        <div className="category change">
-                            <h2>Category</h2>
-                            <input
-                                type="text"
-                                value={category}
-                                onChange={(e) => handleChange(e, setCategory)}
-                            />
-                        </div>
-                        <button>update</button>
-                    </form>
-                </div>
+        <form action="#" className="updateMain" onSubmit={() => { handleSubmit() }}>
+            <div className="update">
+                <h2>Image Url</h2>
+                <input
+                    type="text"
+                    value={image}
+                    onChange={(e) => handleChange(e, setImage)}
+                    name=""
+                    id=""
+                    cols="25"
+                    rows="6"
+                ></input>
             </div>
-        </div>
+            <div className="update">
+                <h2>Name</h2>
+                <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => handleChange(e, setName)}
+                    name=""
+                    id=""
+                ></input>
+            </div>
+
+            <div className="update">
+                <h2>Description</h2>
+                <textarea
+                    className="about"
+                    type="text"
+                    value={description}
+                    onChange={(e) => handleChange(e, setDescription)}
+                    name=""
+                    id=""
+                    cols="35"
+                    rows="9"
+                ></textarea>
+            </div>
+            <div className="update">
+                <h2>Country</h2>
+                <input
+                    type="text"
+                    value={country}
+                    onChange={(e) => handleChange(e, setCountry)}
+                />
+            </div>
+            <div className="update">
+                <h2>Delivery</h2>
+                <input
+                    type="text"
+                    value={delivery}
+                    onChange={(e) => handleChange(e, setDelivery)}
+                />
+            </div>
+            <div className="update">
+                <h2>Category</h2>
+                <input
+                    type="text"
+                    value={category}
+                    onChange={(e) => handleChange(e, setCategory)}
+                />
+            </div>
+            <button><i class="fa-regular fa-circle-check"></i></button>
+        </form>
     );
 }
 

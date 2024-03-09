@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './ProjectPage.scss'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 function ProjectPage() {
-    
+
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
@@ -15,6 +16,9 @@ function ProjectPage() {
 
     return (
         <>
+            <Helmet>
+                <title>Project</title>
+            </Helmet>
             <div className='project'>
                 {detail === null ?
                     <div className="spinner-container">

@@ -83,14 +83,14 @@ const Navbar = () => {
               </li>
               <li className="menu__item menu__dropdown">
                 <a href="#" className="menu__link">
-                  {t('contact')}
+                  {t('account')}
                   <i class="fa-solid fa-angle-up"></i>
                 </a>
                 <div className="submenu megamenu__normal">
                   <ul className="submenu__list">
                     <Link to={'/login'}><li>{t('login')}</li></Link>
                     <Link><li onClick={resetToken}>{t('logout')}</li></Link>
-                  </ul>
+                  </ul>    
                 </div>
               </li>
             </u>
@@ -106,14 +106,14 @@ const Navbar = () => {
         </div>
         <ul className={`burgerList ${burger ? 'burgerOpen' : 'burgerClose'}`}>
           <hr />
-          <Link to={'/bestseller'}><li>{t('products')}</li></Link>
+          <Link to={'/newproduct'}><li>{t('products')}</li></Link>
           <hr />
           <Link to={'/project'}><li>{t('projectsf')}</li></Link>
           <hr />
           <Link to={'/aboutus'}><li>{t('about')}</li></Link>
           <hr />
-          <li>{t('contact')}
-          </li>
+          <Link to={'/login'}><li>{t('account')}
+          </li></Link>
           <hr />
           <section className="navbar__right">
             <button onClick={() => i18n.changeLanguage("az")}>az</button>

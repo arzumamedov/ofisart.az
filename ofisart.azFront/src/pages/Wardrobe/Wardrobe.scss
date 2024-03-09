@@ -1,56 +1,58 @@
 .wardrobe {
+  width: 100%;
+  min-height: 100vh;
+  // background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-around;
+  padding: 10px 0 10px 14px;
+  .spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: aqua;
     width: 100%;
     min-height: 100vh;
-    // background-color: aqua;
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: space-around;
-    padding: 10px 0 10px 14px;
-    .spinner-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // background-color: aqua;
-        width: 100%;
-        min-height: 100vh; 
-        i{
-            font-size: 90px;
-            color: #B97A56;
-        }
-      }
-      
-      .fa-spinner {
-        animation: spin 1s linear infinite;
-      }
-      
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    .card {
-        width: 33%;
-        // height: 350px;
-        // background-color: red;
-        border: 1px solid gainsboro;
-        .name {
-            font-size: 18px;
-            font-family:
-                system-ui,
-                -apple-system,
-                "Segoe UI",
-                "Open Sans",
-                "Helvetica Neue",
-                sans-serif;
-            line-height: 20px;
-        }
-        img {
-            width: 100%;
-            height: 95%;
-            object-fit: contain;
-        }
+    i {
+      font-size: 90px;
+      color: #b97a56;
     }
+  }
+
+  .fa-spinner {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .card {
+    width: 33%;
+    // height: 350px;
+    // background-color: red;
+    border: 1px solid gainsboro;
+    padding: 20px;
+
+    .name {
+      font-size: 18px;
+      font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+      line-height: 20px;
+    }
+    img {
+      width: 100%;
+      height: 95%;
+      object-fit: contain;
+    }
+  }
 }

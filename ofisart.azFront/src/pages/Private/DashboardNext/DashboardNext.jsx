@@ -64,7 +64,6 @@ const DashboardNext = () => {
         localStorage.getItem('token') ?
             <div className='add'>
 
-                <div className="nav"></div>
 
                 <Formik
                     initialValues={{ name: '', image: '', decsription: '', country: '', delivery: '', categoryId: '' }}
@@ -172,7 +171,7 @@ const DashboardNext = () => {
                                 <td>{item.country}</td>
                                 <td>{item.delivery}</td>
                                 <td>{item.category}</td>
-                                <td><Link to={`/updateproduct/${item._id}`}><button>Update</button></Link></td>
+                                <td><Link to={`/updateproduct/${item._id}`}><i class="fa-solid fa-pen"></i></Link></td>
                                 <td><i className="fa-solid fa-trash-can" onClick={() => handleDelete(item._id)} ></i></td>
                             </tr>
                         ))}

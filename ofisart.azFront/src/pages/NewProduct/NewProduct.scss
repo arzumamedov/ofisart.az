@@ -36,6 +36,7 @@
         // height: 350px;
         // background-color: red;
         border: 1px solid gainsboro;
+        padding: 20px;
         .name {
             font-size: 18px;
             font-family:
@@ -52,4 +53,13 @@
             height: 95%;
         }
     }
+}
+@media only screen and (max-width: 768px) {
+  .newProduct{
+    flex-direction: column;
+    padding: 25px 10px;
+    .card{
+      width: 100%;
+    }
+  }
 }

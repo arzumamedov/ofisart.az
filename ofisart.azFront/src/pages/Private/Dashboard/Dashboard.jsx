@@ -42,7 +42,7 @@ const [token, settoken] = useState(null)
               </div>
               <div className="name">{product.name}</div>
               <div className="delivery">Çatdırılma:{product.delivery}</div>
-              <div className="country">İstehsalçı ölkə:{product.country}</div>
+              <div className="country">İstehsalçı ölkə:{product.country}</div>   
               {/* <div className="description">{product.description}</div> */}
             </div>
           ))}

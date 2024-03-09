@@ -2,16 +2,6 @@ import { CategoryModel } from "../models/categorySchema.js";
 import { ProductModel } from "../models/productSchema.js";
 import { ProjectModel } from "../models/projectSchema.js";
 
-// export const getProjectsByCategory = async (req, res) => {
-//     try {
-//         const { categoryId } = req.params
-//         console.log(categoryId);
-//         const product = await ProductModel.find({ categoryId: categoryId })
-//         res.send(product)
-//     } catch (error) {
-//         res.send(error.message)
-//     }
-// }
 export const getByIdProject = async (req, res) => {
     try {
         const { projectId } = req.params

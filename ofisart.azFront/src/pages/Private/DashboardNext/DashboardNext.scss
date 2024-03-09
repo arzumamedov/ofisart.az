@@ -34,7 +34,7 @@
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
-        outline: none;
+      outline: none;
       &:hover {
         cursor: pointer;
       }
@@ -42,12 +42,13 @@
         // background-color: aqua;
         color: #333;
         font-family:
-        system-ui,
-        -apple-system,
-        "Segoe UI",
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;      }
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+      }
     }
     input {
       width: 430px;
@@ -90,20 +91,27 @@
     width: 100%;
     border-collapse: collapse;
 
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+
+      i {
+        font-size: 18px;
+        color: black;
+      }
     }
 
     th {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: left;
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: left;
     }
 
     img {
-        max-width: 100%;
-        height: auto;
+      max-width: 100%;
+      height: auto;
     }
-}
+  }
 }

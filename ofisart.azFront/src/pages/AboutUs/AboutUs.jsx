@@ -1,11 +1,15 @@
 import React from 'react'
 import './AboutUs.scss'
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 function AboutUs() {
   const { t } = useTranslation();
 
   return (
     <>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <div className='aboutUsTop'>
         <div className='aboutUsTopLeft'><img src="https://www.zivella.com/s/2636/i/kulturumuz-1.jpg" alt="" /></div>
         <div className='aboutUsTopRight'>

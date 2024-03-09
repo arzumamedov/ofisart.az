@@ -1,12 +1,12 @@
 .detail {
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     // background-color: green;
     display: flex;
     align-items: center;
     .detailLeft {
         width: 60%;
-        min-height: 100vh;
+        // min-height: 100vh;
         // background-color: aqua;
         display: flex;
         justify-content: center;
@@ -18,7 +18,7 @@
     }
     .detailRight {
         width: 40%;
-        height: 500px;
+        min-height: 300px;
         // background-color: yellow;
         display: flex;
         flex-direction: column;
@@ -30,9 +30,9 @@
             width: 400px;
             .spanModel {
                 display: flex;
-                gap: 170px;
+                gap: 155px;
                 span {
-                    font-size: 25px;
+                    font-size: 17px;
                     font-family:
                         system-ui,
                         -apple-system,
@@ -40,14 +40,16 @@
                         "Open Sans",
                         "Helvetica Neue",
                         sans-serif;
+                        font-weight: 600;
+
                 }
             }
             .spanDelivery {
                 display: flex;
-                gap: 130px;
+                gap: 120px;
                 align-items: center;
                 .delivery {
-                    font-size: 25px;
+                    font-size: 17px;
                     font-family:
                         system-ui,
                         -apple-system,
@@ -57,7 +59,7 @@
                         sans-serif;
                 }
                 span {
-                    font-size: 25px;
+                    font-size: 18px;
                     font-family:
                         system-ui,
                         -apple-system,
@@ -65,6 +67,7 @@
                         "Open Sans",
                         "Helvetica Neue",
                         sans-serif;
+                        font-weight: 600;
                 }
             }
             .spanCountry {
@@ -72,7 +75,7 @@
                 gap: 90px;
                 align-items: center;
                 span {
-                    font-size: 25px;
+                    font-size: 18px;
                     font-family:
                         system-ui,
                         -apple-system,
@@ -80,9 +83,11 @@
                         "Open Sans",
                         "Helvetica Neue",
                         sans-serif;
+                        font-weight: 600;
+
                 }
                 .country {
-                    font-size: 25px;
+                    font-size: 17px;
                     font-family:
                         system-ui,
                         -apple-system,
@@ -94,7 +99,7 @@
             }
 
             .model {
-                font-size: 25px;
+                font-size: 17px;
                 font-family:
                     system-ui,
                     -apple-system,
@@ -119,6 +124,68 @@
             font-size: 22px;
             font-weight: 500;
             font-family: "Nunito", sans-serif;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .detail {
+        // background-color: aqua;
+        flex-direction: column;
+        .detailLeft{
+            // background-color: red;
+            width: 100%;
+        }
+        .detailRight{
+            width: 100%;
+            // background-color: green;
+            text-align: center;
+            gap: 10px;
+            min-height: 100px;
+            .name{
+                font-size: 30px;
+            }
+            .description{
+                font-size: 16px;
+            }
+            .service{
+                width: 100%;
+                // background-color: gray;
+                .spanCountry{
+                    // background-color: yellow;
+                    gap: 5px;
+                    justify-content: center;
+                    span{
+                        font-size: 16px;
+                    }
+                    .country{
+                        font-size: 16px;
+                    }
+                }
+                .spanDelivery{
+                    // background-color: firebrick;
+                    gap: 5px;
+                    justify-content: center;
+                    span{
+                        font-size: 16px;
+                    }
+                    .delivery{
+                        font-size: 16px;
+                    }
+                }
+                .spanModel{
+                    width: 100%;
+                    // background-color: teal;
+                    gap: 5px;
+                    justify-content: center;
+                    span{
+                        font-size: 16px;
+                    }
+                    .model{
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
