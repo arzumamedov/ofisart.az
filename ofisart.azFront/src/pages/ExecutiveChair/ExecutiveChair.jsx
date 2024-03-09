@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Executivechair.scss'
+import './ExecutiveChair.scss'
 import { Link } from 'react-router-dom'
 
 function ExecutiveChair() {
