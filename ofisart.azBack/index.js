@@ -11,8 +11,23 @@ import { ProjectRouter } from './src/routes/projectRoutes.js';
 const upload = multer({ dest: 'public/' })
 const app = express()
 const port = 3030
+const frontAdress = "https://www.ofisart.az";
+app.use(
+    cors({
+      credentials: true,
+      origin: frontAdress,
+    })
+  );
+  app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", frontAdress);
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+  });
 app.use(express.json())
-app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 app.use('/api/category', CategoryRouter)
 app.use('/api/product', ProductRouter)
