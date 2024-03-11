@@ -3,6 +3,7 @@ import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
 import multer from "multer";
+import bodyParser from 'body-parser'
 import { AdminRouter } from './src/routes/adminRoutes.js';
 import { CategoryRouter } from './src/routes/categoryRoutes.js';
 import { ProductRouter } from './src/routes/productRoutes.js';
