@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start":"npx nodemon index.js" ,
+    "build":"echo \"Building...\"" ,
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
