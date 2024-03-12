@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "20.x"
+    "node": "18.x"
   },
   "scripts": {
-    "start":"npx node index.js" ,
+    "start":"npx nodemon index.js" ,
+    "build":"echo \"Building...\"" ,
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
