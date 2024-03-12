@@ -3,13 +3,13 @@ import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
 import multer from "multer";
-import bodyParser from 'body-parser'
+// import bodyParser from 'body-parser'
 import { AdminRouter } from './src/routes/adminRoutes.js';
 import { CategoryRouter } from './src/routes/categoryRoutes.js';
 import { ProductRouter } from './src/routes/productRoutes.js';
 import { ProjectRouter } from './src/routes/projectRoutes.js';
 // import { NewProductRouter } from './src/routes/newproductRoutes.js';
-const upload = multer({ dest: 'public/' })
+// const upload = multer({ dest: 'public/' })
 const app = express()
 const port = 3030
 const frontAdress = "https://www.ofisart.az";
