@@ -23,7 +23,7 @@ app.use(
 );
 app.options("",cors(corsConfig))
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", frontAdress);
+  res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
