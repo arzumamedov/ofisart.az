@@ -13,28 +13,31 @@ const upload = multer({ dest: 'public/' })
 const app = express()
 const port = 3030
 const frontAdress = "https://www.ofisart.az";
+const corsConfig = {
+  origin: "*",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+}
 app.use(
-    cors({
-      credentials: true,
-      origin: frontAdress,
-    })
+  cors(corsConfig)
+);
+app.options("",cors(corsConfig))
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", frontAdress);
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
   );
-  app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", frontAdress);
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-  });
-  app.use(express.json({
-    limit: '50mb',
-    verify: (req, res, buf) => {
-      if (buf && buf.length) {
-        req.rawBody = buf.toString();
-      }
+  next();
+});
+app.use(express.json({
+  limit: '50mb',
+  verify: (req, res, buf) => {
+    if (buf && buf.length) {
+      req.rawBody = buf.toString();
     }
-  }));
+  }
+}));
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '50mb' }));
@@ -48,8 +51,8 @@ app.use('/api/project', ProjectRouter)
 
 
 mongoose.connect('mongodb+srv://arzu:arzu@cluster0.9p2kmwb.mongodb.net/')
-    .then(() => console.log('Connected!'));
+  .then(() => console.log('Connected!'));
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}`)
 })

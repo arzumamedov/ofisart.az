@@ -13,7 +13,7 @@ export const loginController = async (req, res) => {
         if (!hashedPassword) {
             return res.status(401).json({ error: "password are wrong" });
         }
-        const token = jwt.sign({ username: user.username }, process.env.JWT_KEY, { expiresIn: '2h' });
+        const token = jwt.sign({ username: user.username }, 'salamarzu123321', { expiresIn: '2h' });
         res.json({ token: token });
     } catch (error) {
         console.error(error);
