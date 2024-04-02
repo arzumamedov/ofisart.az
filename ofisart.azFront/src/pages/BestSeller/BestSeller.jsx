@@ -11,7 +11,7 @@ function BestSeller() {
             .then((res) => res.json())
             .then((api) => setDetail(api));
     }
-
+//sadads
     useEffect(() => {
         bestSellerFind();
     }, []);
@@ -28,7 +28,7 @@ function BestSeller() {
                     </div>
                 ) : (
                     detail
-                        .filter((x) => x.delivery === "Mümkündür.") // Filtreleme ekledim
+                        .filter((x) => x.delivery === "Mümkündür.")
                         .map((x) => (
                             <div className='card' key={x._id}>
                                 <div className='name'>{x.name}</div>
