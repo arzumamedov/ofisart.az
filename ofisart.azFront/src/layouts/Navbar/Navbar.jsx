@@ -3,7 +3,7 @@ import './Navbar.scss'
 import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import IMAGE from "../../assets/Image/main.png"
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [burger, setBurger] = useState(false)
@@ -19,7 +19,7 @@ const Navbar = () => {
     <header className="header" id="header">
       <nav className="navbar container">
         <section className="navbar__left1">
-          <img src="./src/assets/Image/main.png" alt="" />
+          <img src={IMAGE} alt="" />
         </section>
         <section className="navbar__center">
           <div className="menu">
