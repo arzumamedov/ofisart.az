@@ -1,4 +1,3 @@
-import cors from 'cors';
 import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
@@ -6,7 +5,7 @@ import { AdminRouter } from './src/routes/adminRoutes.js';
 import { CategoryRouter } from './src/routes/categoryRoutes.js';
 import { ProductRouter } from './src/routes/productRoutes.js';
 import { ProjectRouter } from './src/routes/projectRoutes.js';
-
+import cors from 'cors';
 const app = express();
 const port = 3030;
 const frontAddress = "http://0.0.0.0";
