@@ -7,7 +7,7 @@ function Hanger() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65cf41aa2072888a8aa42e66")
+        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/65cf41aa2072888a8aa42e66")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

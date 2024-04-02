@@ -7,7 +7,7 @@ function ExecutiveChair() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65cf40c32072888a8aa42e54")
+        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/65cf40c32072888a8aa42e54")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

@@ -17,7 +17,7 @@ const Dashboard = () => {
   // };
 const [token, settoken] = useState(null)
   useEffect(() => {
-    fetch("http://localhost:3030/api/product/")
+    fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/")
       .then((res) => res.json())
       .then((api) => setAllProducts(api));
     // fetchAllProducts();

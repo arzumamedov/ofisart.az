@@ -7,7 +7,7 @@ function MenagerDesk() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65ce8a7588d10110e61590a5")
+        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/65ce8a7588d10110e61590a5")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

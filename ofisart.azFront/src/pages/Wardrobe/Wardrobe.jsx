@@ -7,7 +7,7 @@ function Wardrobe() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3030/api/product/65cf41412072888a8aa42e5c")
+        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/65cf41412072888a8aa42e5c")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

@@ -26,7 +26,7 @@ function UpdatePage() {
         // e.preventDefault();
         console.log(category);
         navigate('/dashboardd')
-        await fetch(`http://localhost:3030/api/product/${id}`, {
+        await fetch(`http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

@@ -16,7 +16,7 @@ const DashboardNext = () => {
 
 
     function getAll() {
-        fetch('http://localhost:3030/api/product')
+        fetch('http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product')
             .then((res) => res.json())
             .then((api) => setData(api))
     }
@@ -24,7 +24,7 @@ const DashboardNext = () => {
 
     function handleAdd(value) {
         console.log("SUBMITTINGG");
-        fetch("http://localhost:3030/api/product/", {
+        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/", {
             method: "POST",
             mode: "cors",
             cache: "no-cache",
@@ -44,7 +44,7 @@ const DashboardNext = () => {
 
 
     async function handleDelete(id) {
-        await fetch(`http://localhost:3030/api/product/${id}`, { method: "DELETE" })
+        await fetch(`http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/${id}`, { method: "DELETE" })
             .then((res) => res.json())
             .then((api) => {
                 getAll()
