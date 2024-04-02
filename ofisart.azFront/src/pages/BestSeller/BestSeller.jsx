@@ -7,7 +7,7 @@ function BestSeller() {
     const [detail, setDetail] = useState(null);
 
     function bestSellerFind() {
-        fetch("https://ofisart-api.vercel.app")
+        fetch("https://ofisart-az-md5br72lm-arzus-projects.vercel.app/api/product/")
             .then((res) => res.json())
             .then((api) => setDetail(api));
     }
