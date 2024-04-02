@@ -7,7 +7,7 @@ function Accessory() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("https://ofisart-az-md5br72lm-arzus-projects.vercel.app/api/product/65cf41eb2072888a8aa42e6a")
+        fetch("https://ofisart-az-api.vercel.app/api/product/65cf41eb2072888a8aa42e6a")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
