@@ -19,7 +19,7 @@ const Navbar = () => {
     <header className="header" id="header">
       <nav className="navbar container">
         <section className="navbar__left1">
-          <NavLink to={'/'}><h1 className='navbar__a'>OfisArt</h1></NavLink>
+          <img src="./src/assets/Image/main.png" alt="" />
         </section>
         <section className="navbar__center">
           <div className="menu">
