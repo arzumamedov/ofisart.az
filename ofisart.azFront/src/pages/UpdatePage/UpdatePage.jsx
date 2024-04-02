@@ -26,7 +26,7 @@ function UpdatePage() {
         // e.preventDefault();
         console.log(category);
         navigate('/dashboardd')
-        await fetch(`http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/${id}`, {
+        await fetch(`https://ofisart-api.vercel.app/api/product/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -40,7 +40,7 @@ function UpdatePage() {
     }
 
     async function getProductById(id) {
-        const data = await fetch(`http://localhost:3030/api/product/id/${id}`);
+        const data = await fetch(`https://ofisart-api.vercel.app/api/product/id/${id}`);
         const res = await data.json();
         setName(res.name);
         setImage(res.image);

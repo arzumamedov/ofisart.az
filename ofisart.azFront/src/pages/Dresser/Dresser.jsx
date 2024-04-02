@@ -7,7 +7,7 @@ function Dresser() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/65cf41682072888a8aa42e62")
+        fetch("https://ofisart-api.vercel.app/api/product/65cf41682072888a8aa42e62")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

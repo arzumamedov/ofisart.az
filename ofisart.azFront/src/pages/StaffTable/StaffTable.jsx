@@ -7,7 +7,7 @@ function StaffTable() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/65ce8a9588d10110e61590a7")
+        fetch("https://ofisart-api.vercel.app/api/product/65ce8a9588d10110e61590a7")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

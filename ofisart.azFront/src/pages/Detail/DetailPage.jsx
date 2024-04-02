@@ -11,7 +11,7 @@ function DetailPage() {
   //   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    fetch(`http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/id/${id}`)
+    fetch(`https://ofisart-api.vercel.app/api/product/id/${id}`)
       .then((res) => res.json())
       .then((api) => {
         setDetail(api);

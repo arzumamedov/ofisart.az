@@ -12,7 +12,7 @@ const Login = () => {
     const handleLogin = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/admin/login', {
+            const response = await fetch('https://ofisart-api.vercel.app/api/admin/login', {
                 method: "POST",
                 mode: "cors",
                 cache: "no-cache",

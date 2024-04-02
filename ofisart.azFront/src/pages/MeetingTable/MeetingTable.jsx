@@ -7,7 +7,7 @@ function MeetingTable() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product/65ce8a9d88d10110e61590a9")
+        fetch("https://ofisart-api.vercel.app/api/product/65ce8a9d88d10110e61590a9")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

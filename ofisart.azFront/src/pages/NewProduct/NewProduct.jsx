@@ -8,7 +8,7 @@ function NewProduct() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("http://ofisart-az-api-git-master-arzus-projects.vercel.app/api/product")
+        fetch("https://ofisart-api.vercel.app/api/product")
             .then((res) => res.json())
             .then((api) => {
                 const sortedData = api.sort((a, b) => {
