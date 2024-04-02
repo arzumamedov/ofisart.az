@@ -14,7 +14,7 @@ import { ProjectRouter } from './src/routes/projectRoutes.js';
 // const upload = multer({ dest: 'public/' })
 const app = express()
 const port = 3030
-const frontAdress = "0.0.0.0";
+const frontAdress = "https://ofisart.az";
 const corsConfig = {
   origin: "*",
   credentials: true,
