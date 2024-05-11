@@ -19,7 +19,7 @@ const DashboardNext = () => {
 
 
     function getAll() {
-        fetch('https://ofisart-api.vercel.app/api/product')
+        fetch('https://ofisart-az-api.vercel.app/api/product')
             .then((res) => res.json())
             .then((api) => setData(api))
     }
@@ -27,7 +27,7 @@ const DashboardNext = () => {
 
     function handleAdd(value) {
         console.log("SUBMITTINGG");
-        fetch("https://ofisart-api.vercel.app/api/product/", {
+        fetch("https://ofisart-az-api.vercel.app/api/product/", {
             method: "POST",
             mode: "cors",
             cache: "no-cache",
@@ -47,7 +47,7 @@ const DashboardNext = () => {
 
 
     async function handleDelete(id) {
-        await fetch(`https://ofisart-api.vercel.app/api/product/${id}`, { method: "DELETE" })
+        await fetch(`https://ofisart-az-api.vercel.app/api/product/${id}`, { method: "DELETE" })
             .then((res) => res.json())
             .then((api) => {
                 getAll()

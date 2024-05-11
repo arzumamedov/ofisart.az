@@ -11,7 +11,7 @@ function ProjectPage() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("https://ofisart-api.vercel.app/api/project/")
+        fetch("https://ofisart-az-api.vercel.app/api/project/")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

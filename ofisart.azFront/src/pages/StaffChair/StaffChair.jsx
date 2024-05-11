@@ -9,7 +9,7 @@ function StaffChair() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("https://ofisart-api.vercel.app/api/product/65cf40e22072888a8aa42e57")
+        fetch("https://ofisart-az-api.vercel.app/api/product/65cf40e22072888a8aa42e57")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])

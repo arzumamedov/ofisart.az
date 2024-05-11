@@ -13,7 +13,7 @@ function ProjectDetail() {
 //   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    fetch(`https://ofisart-api.vercel.app/api/project/id/${id}`)
+    fetch(`https://ofisart-az-api.vercel.app/api/project/id/${id}`)
       .then((res) => res.json())
       .then((api) => {
         setDetail(api);

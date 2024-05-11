@@ -9,7 +9,7 @@ function MagazineTable() {
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {
-        fetch("https://ofisart-api.vercel.app/api/product/65cf41db2072888a8aa42e68")
+        fetch("https://ofisart-az-api.vercel.app/api/product/65cf41db2072888a8aa42e68")
             .then((res) => res.json())
             .then((api) => setDetail(api))
     }, [])
