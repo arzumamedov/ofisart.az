@@ -7,6 +7,9 @@ import * as Yup from 'yup';
 
 
 function UpdatePage() {
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const { id } = useParams();
     const [name, setName] = useState("");
     const [image, setImage] = useState("");

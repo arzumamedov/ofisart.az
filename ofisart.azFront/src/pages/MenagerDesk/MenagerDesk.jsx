@@ -3,7 +3,10 @@ import './MenagerDesk.scss'
 import { Link } from 'react-router-dom'
 
 function MenagerDesk() {
-
+    useEffect(() => {
+      console.log("SALAMM");
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

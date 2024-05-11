@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 function BestSeller() {
+    useEffect(()=>{
+        window.scroll(0,0)
+    },[])
+
+
     const [detail, setDetail] = useState(null);
 
     function bestSellerFind() {

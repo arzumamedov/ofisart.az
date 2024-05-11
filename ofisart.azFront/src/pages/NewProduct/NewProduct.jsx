@@ -4,7 +4,9 @@ import './NewProduct.scss'
 import { Helmet } from 'react-helmet'
 
 function NewProduct() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import Slider from "../../components/Slider/Slider";
 import "./ProjectDetail.scss";
 function ProjectDetail() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   const [detail, setDetail] = useState([]);
   const { id } = useParams();
 

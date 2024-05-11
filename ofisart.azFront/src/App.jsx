@@ -25,7 +25,9 @@ import StaffTable from "./pages/StaffTable/StaffTable";
 import Tumba from "./pages/Tumba/Tumba";
 import UpdatePage from "./pages/UpdatePage/UpdatePage";
 import Wardrobe from "./pages/Wardrobe/Wardrobe";
+import { useEffect } from "react";
 function App() {
+  
   return (
     <>
       <BrowserRouter>

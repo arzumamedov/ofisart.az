@@ -3,7 +3,9 @@ import './StaffTable.scss'
 import { Link } from 'react-router-dom'
 
 function StaffTable() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

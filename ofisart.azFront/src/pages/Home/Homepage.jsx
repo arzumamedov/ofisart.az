@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Gallery from '../../components/Gallery/Gallery';
 import HeaderSection from '../../components/HeaderSection/HeaderSection';
 import ProductSection from '../../components/ProductSection/ProductSection';
@@ -7,12 +7,15 @@ import { Helmet } from "react-helmet";
 
 
 function Homepage() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   return (
     <>
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <HeaderSection />/
+      <HeaderSection />
       <ProductSection />
       <Gallery />
       <Video />

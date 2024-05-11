@@ -3,7 +3,9 @@ import './Wardrobe.scss'
 import { Link } from 'react-router-dom'
 
 function Wardrobe() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

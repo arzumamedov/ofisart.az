@@ -3,7 +3,9 @@ import './HomeOfficeDesk.scss'
 import { Link } from 'react-router-dom'
 
 function HomeOfficeDesk() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

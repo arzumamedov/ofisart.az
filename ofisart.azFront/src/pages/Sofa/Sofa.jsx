@@ -3,7 +3,9 @@ import './Sofa.scss'
 import { Link } from 'react-router-dom'
 
 function Sofa() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

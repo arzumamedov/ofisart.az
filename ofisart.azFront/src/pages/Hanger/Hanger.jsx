@@ -3,7 +3,9 @@ import './Hanger.scss'
 import { Link } from 'react-router-dom'
 
 function Hanger() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

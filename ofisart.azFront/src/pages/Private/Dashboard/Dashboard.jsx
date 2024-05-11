@@ -4,7 +4,9 @@ import { Link, useNavigate, useNavigation } from "react-router-dom";
 
 const Dashboard = () => {
   const [allProducts, setAllProducts] = useState([]);
-
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   // const fetchAllProducts = async () => {
   //     try {
   //         const response = await fetch('http://localhost:3030/api/product');

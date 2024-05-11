@@ -14,8 +14,8 @@ export default () => {
     return (
         <Swiper
             className='swiper'
-            // install Swiper modules
-            modules={[Navigation, Keyboard, Pagination, Autoplay, A11y]}
+            loop ={true}
+            modules={[Navigation, Keyboard, Pagination, Autoplay]}
             breakpoints={{
                 640: {
                     slidesPerView: 2,
@@ -37,13 +37,13 @@ export default () => {
             keyboard={{
                 enabled: true
             }}
-            loop={true}
+            
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
         >
             <SwiperSlide>
-                <div className='img-1'>
+                <div className='img-2'>
                     <div className='text'>
                         <h2>{t('design')}</h2>
                     </div>
@@ -51,6 +51,7 @@ export default () => {
                 </div>
 
             </SwiperSlide>
+
             <SwiperSlide>
                 <div className='img-2'>
                     <div className='text'>
@@ -60,6 +61,7 @@ export default () => {
                 </div>
 
             </SwiperSlide>
+           
             <SwiperSlide>
                 <div className='img-3'>
                     <div className='text'>
@@ -69,6 +71,7 @@ export default () => {
                 </div>
 
             </SwiperSlide>
+
             <SwiperSlide>
                 <div className='img-4'>
                     <div className='text'>
@@ -78,8 +81,10 @@ export default () => {
                 </div>
 
             </SwiperSlide>
+            
+            
             <SwiperSlide>
-                <div className='img-1'>
+                <div className='img-2'>
                     <div className='text'>
                         <h2>{t('design')}</h2>
                     </div>
@@ -87,6 +92,7 @@ export default () => {
                 </div>
 
             </SwiperSlide>
+
             <SwiperSlide>
                 <div className='img-2'>
                     <div className='text'>
@@ -96,6 +102,7 @@ export default () => {
                 </div>
 
             </SwiperSlide>
+           
             <SwiperSlide>
                 <div className='img-3'>
                     <div className='text'>
@@ -105,6 +112,7 @@ export default () => {
                 </div>
 
             </SwiperSlide>
+
             <SwiperSlide>
                 <div className='img-4'>
                     <div className='text'>
@@ -114,7 +122,8 @@ export default () => {
                 </div>
 
             </SwiperSlide>
-
+            
+            
         </Swiper>
     );
 };

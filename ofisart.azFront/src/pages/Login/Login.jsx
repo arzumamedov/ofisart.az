@@ -1,9 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Login.scss";
 import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const navigate = useNavigate()
     const [user, setUser] = useState({
         username: "",

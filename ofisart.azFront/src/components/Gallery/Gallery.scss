@@ -7,18 +7,20 @@ $s: 400px; /* the size */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
+    // display: flex;
     // background-color: red;
     justify-content: space-around;
     padding: 20px 0;
     gap: 20px;
-
+    // width: 33%;
+    display: flex;
+    flex-wrap: wrap;
     .galleryImg {
+        // width: 33%;
         display: grid;
-
         > img {
             grid-area: 1/1;
-            width: 400px;
+            max-width: 400px;
             aspect-ratio: 1;
             object-fit: cover;
             border-radius: 50%;

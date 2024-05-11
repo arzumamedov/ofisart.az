@@ -5,6 +5,9 @@ import './DashboardNext.scss'
 import { Link, useNavigate } from 'react-router-dom';
 
 const DashboardNext = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const navigate = useNavigate()
     const [data, setData] = useState([])
     const [input, setInput] = useState('')

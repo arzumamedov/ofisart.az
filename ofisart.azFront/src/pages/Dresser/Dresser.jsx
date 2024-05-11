@@ -3,6 +3,9 @@ import './Dresser.scss'
 import { Link } from 'react-router-dom'
 
 function Dresser() {
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
 
     const [detail, setDetail] = useState(null)
 

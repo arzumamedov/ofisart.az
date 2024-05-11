@@ -3,7 +3,9 @@ import './MeetingTable.scss'
 import { Link } from 'react-router-dom'
 
 function MeetingTable() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

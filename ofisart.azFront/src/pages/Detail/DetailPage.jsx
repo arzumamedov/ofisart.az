@@ -4,6 +4,9 @@ import Slider from "../../components/Slider/Slider";
 import "./DetailPage.scss";
 import { Helmet } from "react-helmet";
 function DetailPage() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   const [detail, setDetail] = useState([]);
   const { id } = useParams();
 

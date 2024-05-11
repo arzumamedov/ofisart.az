@@ -3,7 +3,9 @@ import './MagazineTable.scss'
 import { Link } from 'react-router-dom'
 
 function MagazineTable() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

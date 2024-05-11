@@ -1,4 +1,5 @@
 {
+    "reception": "Customer reception desks",
     "title": "Best seller",
     "projects": "Our projects",
     "newproduct": "New products",
@@ -43,7 +44,9 @@
     "manifestfifth":"We are here to make your offices more comfortable and efficient.",
     "login": "Log In",
     "logout":"Log Out",
-    "account":"Account"
+    "account":"Account",
+    "safe":"Safes"
+
 
 
 

@@ -3,7 +3,9 @@ import './Tumba.scss'
 import { Link } from 'react-router-dom'
 
 function Tumba() {
-
+    useEffect(() => {
+        window.scroll(0, 0)
+      }, [])
     const [detail, setDetail] = useState(null)
 
     useEffect(() => {

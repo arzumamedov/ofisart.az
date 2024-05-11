@@ -1,4 +1,5 @@
 {
+    "reception": "Müştəri qəbul masasaları",
     "title": "Ən çox satılan",
     "projects": "Layihələrimiz",
     "newproduct": "Yeni məhsullar",
@@ -43,5 +44,7 @@
     "manifestfifth": "Ofislərinizi daha rahat və səmərəli etmək üçün buradayıq.",
     "login": "Daxil Ol",
     "logout":"Çıxış",
-    "account":"Hesab"
+    "account":"Hesab",
+    "safe":"Seyflər"
+
 }

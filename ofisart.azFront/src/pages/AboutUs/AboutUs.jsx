@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './AboutUs.scss'
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 function AboutUs() {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   const { t } = useTranslation();
 
   return (
