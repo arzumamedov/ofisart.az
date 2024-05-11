@@ -29,7 +29,6 @@ import { useEffect } from "react";
 function App() {
   
   return (
-    <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Mainlayout />}>
@@ -65,7 +64,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
   );
 }
 
