@@ -194,7 +194,7 @@ const Navbar = () => {
                   {t('account')}
                   <i class="fa-solid fa-angle-up"></i>
                 </a>
-                <div className="submenu megamenu__normal">
+                <div className="submenu megamenu__normal">s
                   <ul className="submenu__list">
                     <Link to={'/login'}><li>{t('login')}</li></Link>
                     <Link><li onClick={resetToken}>{t('logout')}</li></Link>

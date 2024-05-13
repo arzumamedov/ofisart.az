@@ -3,39 +3,39 @@ import './Dresser.scss'
 import { Link } from 'react-router-dom'
 
 function Dresser() {
-    useEffect(() => {
-        window.scroll(0, 0)
-      }, [])
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
 
-    const [detail, setDetail] = useState(null)
+  const [detail, setDetail] = useState(null)
 
-    useEffect(() => {
-        fetch("https://ofisart-az-api.vercel.app/api/product/65cf41682072888a8aa42e62")
-            .then((res) => res.json())
-            .then((api) => setDetail(api))
-    }, [])
+  useEffect(() => {
+    fetch("https://ofisart-az-api.vercel.app/api/product/65cf41682072888a8aa42e62")
+      .then((res) => res.json())
+      .then((api) => setDetail(api))
+  }, [])
 
 
-    return (
-        <>
-    <div className='dresser'>
-      {detail === null ? 
-        <div className="spinner-container">
-          <i className="fa-solid fa-spinner fa-spin"></i>
-        </div>
-        : detail.map((x) => (
+  return (
+    <>
+      <div className='dresser'>
+        {detail === null ?
+          <div className="spinner-container">
+            <i className="fa-solid fa-spinner fa-spin"></i>
+          </div>
+          : detail.map((x) => (
             <div className='card'>
-                <div className='name'>{x.name}</div>
-                <Link to={'/detail/' + x._id}>
-                    <img src={x.image[0]} alt="" />
-                </Link>
+              <div className='name'>{x.name}</div>
+              <Link to={'/detail/' + x._id}>
+                <img src={x.image[0]} alt="" />
+              </Link>
             </div>
           ))
-      }
-    </div>
+        }
+      </div>
 
-        </>
-    )
+    </>
+  )
 }
 
 export default Dresser
