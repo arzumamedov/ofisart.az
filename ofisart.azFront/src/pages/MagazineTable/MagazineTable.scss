@@ -56,3 +56,14 @@
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .magazineTable{
+    // background-color: aqua;
+    flex-direction: column;
+    padding: 10px;
+    .card{
+      // background-color: red;
+      width: 100%;
+    }
+  }
+}
